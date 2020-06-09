@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+  }
+  .center1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
