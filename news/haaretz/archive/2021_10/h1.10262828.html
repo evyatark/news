@@ -30,7 +30,7 @@
     <script async custom-element="amp-app-banner" src="https://cdn.ampproject.org/v0/amp-app-banner-0.1.js"></script>
     
     <!-- Scripts of elements -->
-                                        
+                                                    
     
 
             <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
@@ -73,7 +73,7 @@
 <meta name="twitter:description" content="Starting today, Israel's Green Pass, which grants access to public spaces, won't be available to over a million Israelis who received their second vaccine shot more than six months ago. The reason: waning immunity"/>
 <meta name="twitter:image" content="https://www.haaretz.co.il/polopoly_fs/1.10262880.1633272729!/image/1031274500.jpg_gen/derivatives/headline_1200x630/1031274500.jpg"/>
 
-<meta property="og:pubdate" content="2021-10-04T09:40:41+0300">
+<meta property="og:pubdate" content="2021-10-04T16:24:41+0300">
 <meta property="og:url" content="https://www.haaretz.com/israel-news/with-new-covid-policy-israel-redefines-what-it-means-to-be-vaccinated-1.10262828" >
 <meta property="og:title" content="With new COVID policy, Israel redefines what it means to be vaccinated" >
 <meta property="og:description"content="Starting today, Israel's Green Pass, which grants access to public spaces, won't be available to over a million Israelis who received their second vaccine shot more than six months ago. The reason: waning immunity" >
@@ -92,7 +92,7 @@
 
          
 <script type="application/ld+json">
-    {"@context":"http://schema.org","@type":"NewsArticle","isAccessibleForFree":"False","hasPart":{"@type":"WebPageElement","isAccessibleForFree":"False","cssSelector":".paywall"},"mainEntityOfPage":"https://www.haaretz.com/israel-news/with-new-covid-policy-israel-redefines-what-it-means-to-be-vaccinated-1.10262828","headline":"With new COVID policy, Israel redefines what it means to be vaccinated","image":{"@type":"ImageObject","height":1200,"width":1200,"url":"https://img.haarets.co.il/img/1.10262880/1031274500.jpg?precrop=1372,1373,x729,y95&width=1200&height=1200"},"publisher":{"@type":"Organization","name":"הארץ","sameAs":["https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%A8%D7%A5","https://www.facebook.com/haaretz/","https://twitter.com/haaretz","https://www.youtube.com/user/haaretzdaily"],"logo":{"@type":"ImageObject","url":"https://www.haaretz.co.il/htz/images/logos/htz-logo-icon.png","height":"500","width":"500"}},"author":[{"@type":"Person","name":"Sam Sokol","sameAs":"https://www.haaretz.com/misc/writers/WRITER-1.9500307"}],"datePublished":"2021-10-04T09:40:00+0300","dateModified":"2021-10-04T09:40:00+0300","description":"Starting today, Israel\u0027s Green Pass, which grants access to public spaces, won\u0027t be available to over a million Israelis who received their second vaccine shot more than six months ago. The reason: waning immunity"}
+    {"@context":"http://schema.org","@type":"NewsArticle","isAccessibleForFree":"False","hasPart":{"@type":"WebPageElement","isAccessibleForFree":"False","cssSelector":".paywall"},"mainEntityOfPage":"https://www.haaretz.com/israel-news/with-new-covid-policy-israel-redefines-what-it-means-to-be-vaccinated-1.10262828","headline":"With new COVID policy, Israel redefines what it means to be vaccinated","image":{"@type":"ImageObject","height":1200,"width":1200,"url":"https://img.haarets.co.il/img/1.10262880/1031274500.jpg?precrop=1372,1373,x729,y95&width=1200&height=1200"},"publisher":{"@type":"Organization","name":"הארץ","sameAs":["https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%A8%D7%A5","https://www.facebook.com/haaretz/","https://twitter.com/haaretz","https://www.youtube.com/user/haaretzdaily"],"logo":{"@type":"ImageObject","url":"https://www.haaretz.co.il/htz/images/logos/htz-logo-icon.png","height":"500","width":"500"}},"author":[{"@type":"Person","name":"Sam Sokol","sameAs":"https://www.haaretz.com/misc/writers/WRITER-1.9500307"}],"datePublished":"2021-10-04T16:24:00+0300","dateModified":"2021-10-04T16:24:00+0300","description":"Starting today, Israel\u0027s Green Pass, which grants access to public spaces, won\u0027t be available to over a million Israelis who received their second vaccine shot more than six months ago. The reason: waning immunity"}
 </script>
 
     	
@@ -106,7 +106,114 @@
 /*# sourceMappingURL=screen.css.map */
 
     
-        
+                            .infographic-timeline {
+    font-size: 18px;
+    position: relative;
+    color: #207eb5;
+    border-color: #207eb5;
+    border-right: solid 1px;
+    padding-right: 17px;
+    margin-right: 15px;
+}
+
+.infographic-timeline .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.infographic-timeline .image {
+    padding-left: 7px;
+}
+
+.infographic-timeline .element {
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding-left: 7px;
+}
+
+.infographic-timeline .element .title {
+    font-weight: bold;
+    margin-bottom: 0;
+    position: relative;
+}
+
+
+.infographic-timeline .element .text {
+    line-height: 1.67;
+    position: relative;
+    color: #000000;
+}
+
+
+.infographic-timeline .title:before {
+    width: 8px;
+    height: 18px;
+    top: -2px;
+    border-bottom: solid 2px #207eb5;
+}
+
+.infographic-timeline .element .title:before {
+    width: 8px;
+    height: 8px;
+    border: solid 1px;
+    border-radius: 50%;
+    top: 12px;
+}
+
+.infographic-timeline .element:last-child .text:before {
+    width: 8px;
+    height: 15px;
+    bottom: 0;
+    border-top: solid 2px #207eb5;
+}
+
+.infographic-timeline .credit {
+    margin-bottom: 26px;
+    font-size: 12px;
+    color: #2d2d2d;
+}
+
+.infographic-timeline .element .title:before,
+.infographic-timeline .title:before,
+.infographic-timeline .element:last-child .text:before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    right: -21px;
+}
+
+.infographic-timeline .main-title:before {
+    /*left: -21px;*/
+}
+
+.dark-mode .infographic-timeline {
+    border-color: #fff;
+}
+
+.dark-mode .infographic-timeline .element .title {
+    color: #ff8585;
+}
+
+.dark-mode .infographic-timeline .title {
+    color: #86d8f3;
+}
+
+.dark-mode .infographic-timeline .title:before,
+.dark-mode .infographic-timeline .element:last-child .text:before {
+    background-color: #222;
+}
+
+
+.dark-mode .infographic-timeline .element .text {
+    color: white;
+}
+
+.dark-mode .infographic-timeline .credit {
+    color: white;
+}            
     .amp-article-paywall{
         width: 100%;
         background-image: linear-gradient(to bottom, #00a9d5, #4abee4);
@@ -565,9 +672,9 @@
                     
                     
                                                                 <div class="c-article-byline__pubdate u-c--text-pale">
-                            <meta property="article:published" itemprop="datePublished" content="2021-10-04T09:40:41+0300" />
-                            <meta property="article:modified" itemprop="dateModified" content="2021-10-04T09:40:00+0300" />
-                            <time datetime="2021-10-04T09:40:41+0300">09:40</time></div>
+                            <meta property="article:published" itemprop="datePublished" content="2021-10-04T16:24:41+0300" />
+                            <meta property="article:modified" itemprop="dateModified" content="2021-10-04T16:24:00+0300" />
+                            <time datetime="2021-10-04T16:24:41+0300">16:24</time></div>
                                                             </div>
             </div>
         </div>
@@ -664,7 +771,7 @@
                     "extraUrlParams": {
                         "properties.publisher": "haaretz",
                         "properties.category": "haaretz com/israel-news/",
-                        "properties.article.publishingdate": "2021-10-04T09:40:41.615Z",
+                        "properties.article.publishingdate": "2021-10-04T16:24:41.152Z",
                         "properties.article.author": "Sam Sokol"
                     }
                 }
@@ -689,7 +796,19 @@
                                 
                                 
                                             
-                                    
+                                    <figure>
+<amp-iframe width="360" height="180"
+            sandbox="allow-scripts allow-same-origin"
+            layout="responsive"
+            frameborder="0"
+            src="https://omny.fm/shows/haaretz-weekly/listen-the-afrikaners-who-found-a-new-home-in-isra/embed?style=artwork&image=1&share=1&download=1&description=1&subscribe=1&foreground=222222&background=f3f3f3&highlight=09a5d9">
+</amp-iframe>
+    <figcaption class="c-embed__caption u-mh--1 u-mt--0 u-type--micro">
+                <span class="u-fw--700">LISTEN: They were devout Christians in South Africa. Then they became Jews and moved to Israel</span>
+    <span class="u-fw--400"></span>
+    </figcaption>
+</figure>
+                            
                                                                                 
                             
                                                         
@@ -734,12 +853,7 @@
                                                         
                       <p>The new Green Pass includes a unique QR code, which business and facility owners are supposed to scan before granting holders entry to public amenities.</p>
         
-                    
-                                                                                                                                            
-                                                <figure class="c-figure c-figure--wide u-mh--0 u-pos--r">
-                    <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=320' width='320' alt='Israel is the first country in the world to set this new bar for vaccination status ' srcset='https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=320 320w,https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=480 480w,https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=640 640w,https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=800 800w' title='Israel is the first country in the world to set this new bar for vaccination status ' height='213' ></amp-img>                                        <figcaption class="c-figure__fig-caption u-mh--1 u-type--micro u-fw--700">Israel is the first country in the world to set this new bar for vaccination status  <span class="c-figure__fig-credit u-fw--400 u-d--ib">  Moti Milrod</span></figcaption>
-                                    </figure>
-                      
+                              
                                 
                                 
                                             
@@ -763,7 +877,24 @@
                                 
                                 
                                             
-                                    
+                                    <div class="infographic-timeline">
+    <div class="title main-title"></div>
+                    <div class="image">
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=320&height=240' width='320' alt='Serious cases  - just for outside image. not the actual info' srcset='https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=320&height=240 320w,https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=480&height=360 480w,https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=640&height=480 640w,https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=800&height=600 800w' height='240' ></amp-img>        </div>
+        <div class="credit">                                    צילום: Haaretz
+</div>
+    
+                        <div class="element">
+                <div class="title">The graphs that prove Pfizer vaccine works</div>
+                                <div class="text"><p>■ The 10% unvaxxed <a href="https://www.haaretz.com/israel-news/unvaxxed-10-of-israelis-are-73-of-serious-cases-65-of-deaths-1.10251639">fueling the COVID catastrophe</a>; account for 89% of <a href="https://www.haaretz.com/israel-news/.premium-israel-reaches-record-number-of-covid-patients-on-life-saving-ecmo-machines-1.10243212">ECMO</a> patients, <a href="https://www.haaretz.com/israel-news/these-unvaccinated-10-fuel-israel-s-covid-crisis-1.10251639">65% of serious cases</a> and <a href="https://www.haaretz.com/israel-news/israel-covid-unvaccinated-deaths-pfizer-booster-serious-cases-delta-1.10245471">60% of deaths</a></p></div>
+            </div>
+                                <div class="element">
+                <div class="title">Read more</div>
+                                <div class="text"><p>■ Israel <a href="https://www.haaretz.com/israel-news/.premium-with-new-covid-policy-israel-redefines-what-it-means-to-be-vaccinated-1.10262828">stripping million+ citizens of vaccine passport</a>. Here's why<br> ■ All COVID passes <a href="https://www.haaretz.com/israel-news/covid-vaccination-pass-israel-about-to-expire-here-s-how-to-get-a-new-one-1.10255927">expire</a>. Here's why and how to get a new one<br> ■ Israel to study <a href="https://www.haaretz.com/israel-news/.premium-israelis-to-study-possible-link-between-menstrual-irregularities-and-covid-vaccines-1.10253018">link between menstrual irregularities and vaccinations</a><br> ■ Booster shot <a href="https://www.haaretz.com/israel-news/israeli-study-finds-covid-booster-shot-increases-protection-elevenfold-for-elderly-1.10215149">increases protection elevenfold</a>, data shows<br> ■ Prominent <a href="https://www.haaretz.com/israel-news/israeli-anti-vaxxer-dies-of-covid-but-his-followers-remain-unwavering-1.10208605">Israeli anti-vaxxer dies of COVID</a></p></div>
+            </div>
+                                                            
+</div>
+
                                                                         
 
                             <div>
@@ -775,27 +906,6 @@
                                                         
                             
                                                         
-                    <aside class="c-related-article-text-only-wrapper u-mv--5">
-                <section>
-                    <ul class="c-related-article-text-only u-c--text-related u-ms--1em u-autospace--2 u-type--zeta">
-                                                
-                                                                                    <li>
-                                    
-         <article class="u-d--i">
-    <a class="c-related-article-text-only u-autospace--1" href="https://www.haaretz.com/israel-news/covid-vaccination-pass-israel-about-to-expire-here-s-how-to-get-a-new-one-1.10255927" >
-                    <h3 class="c-related-article-text-only__title u-type--zeta u-d--i">Israel's new COVID pass: Everything you need to know</h3>
-            </a>
-</article>                                      </li>
-                                                                                                                <li>
-                                    
-         <article class="u-d--i">
-    <a class="c-related-article-text-only u-autospace--1" href="https://www.haaretz.com/israel-news/figures-continue-to-drop-as-israel-s-covid-cabinet-set-to-meet-after-a-month-1.10261775" >
-                    <h3 class="c-related-article-text-only__title u-type--zeta u-d--i">Figures continue to drop as Israel's COVID cabinet set to meet after a month</h3>
-            </a>
-</article>                                      </li>
-                                                                                                                            </ul>
-                </section>
-            </aside>
                       <p>According to Davidovitch, who is also director of the School of Public Health at Ben-Gurion University of the Desert, Be’er Sheva, the Green Pass is “not a prize or punishment” but rather a public health measure based on consideration of clinical and epidemiological data.</p>
         
                               
@@ -818,12 +928,7 @@
                                                         
                       <p>He added that the data indicated that the increase in protection following a third shot could “be 10 times and up, compared to people who got the second dose.”</p>
         
-                    
-                                                                                                                                            
-                                                <figure class="c-figure c-figure--wide u-mh--0 u-pos--r">
-                    <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=320' width='320' alt='A nurse about to administer a booster shot at a medical center in Jerusalem last week.' srcset='https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=320 320w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=480 480w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=640 640w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=800 800w' title='A nurse about to administer a booster shot at a medical center in Jerusalem last week.' height='213' ></amp-img>                                        <figcaption class="c-figure__fig-caption u-mh--1 u-type--micro u-fw--700">A nurse about to administer a booster shot at a medical center in Jerusalem last week. <span class="c-figure__fig-credit u-fw--400 u-d--ib">Ohad Zwigenberg</span></figcaption>
-                                    </figure>
-                      
+                              
                                 
                                 
                                             
@@ -833,7 +938,12 @@
                                                         
                       <p><a href="https://www.haaretz.com/israel-news/covid-booster-shot-reduces-viral-load-limits-transmission-israeli-study-finds-1.10224174">A recent joint study</a> by the Technion – Israel Institute of Technology, Haifa, and KSM – the Maccabi Research and Innovation Center, found that about six months after someone receives the second dose of the vaccine, its effectiveness at reducing viral load dissipates. But a third dose slashes viral loads by a factor of four, thereby restoring the vaccine’s effectiveness to what it was shortly after the second dose was administered.</p>
         
-                              
+                    
+                                                                                                                                            
+                                                <figure class="c-figure c-figure--wide u-mh--0 u-pos--r">
+                    <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=320' width='320' alt='A nurse about to administer a booster shot at a medical center in Jerusalem last week.' srcset='https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=320 320w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=480 480w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=640 640w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=800 800w' title='A nurse about to administer a booster shot at a medical center in Jerusalem last week.' height='213' ></amp-img>                                        <figcaption class="c-figure__fig-caption u-mh--1 u-type--micro u-fw--700">A nurse about to administer a booster shot at a medical center in Jerusalem last week. <span class="c-figure__fig-credit u-fw--400 u-d--ib">Ohad Zwigenberg</span></figcaption>
+                                    </figure>
+                      
                                 
                                 
                                             
@@ -849,6 +959,27 @@
                                                         
                             
                                                         
+                    <aside class="c-related-article-text-only-wrapper u-mv--5">
+                <section>
+                    <ul class="c-related-article-text-only u-c--text-related u-ms--1em u-autospace--2 u-type--zeta">
+                                                
+                                                                                    <li>
+                                    
+         <article class="u-d--i">
+    <a class="c-related-article-text-only u-autospace--1" href="https://www.haaretz.com/israel-news/israel-s-covid-figures-continue-to-drop-serious-cases-at-two-month-low-1.10264332" >
+                    <h3 class="c-related-article-text-only__title u-type--zeta u-d--i">Serious COVID cases in Israel at two-month low; further drop in key metrics</h3>
+            </a>
+</article>                                      </li>
+                                                                                                                <li>
+                                    
+         <article class="u-d--i">
+    <a class="c-related-article-text-only u-autospace--1" href="https://www.haaretz.com/israel-news/covid-vaccination-pass-israel-about-to-expire-here-s-how-to-get-a-new-one-1.10255927" >
+                    <h3 class="c-related-article-text-only__title u-type--zeta u-d--i">Israel's new COVID pass: Everything you need to know</h3>
+            </a>
+</article>                                      </li>
+                                                                                                                            </ul>
+                </section>
+            </aside>
                       <p>According to data <a href="https://www.cdc.gov/mmwr/volumes/70/wr/mm7038e1.htm?s_cid=mm7038e1_w" target="_blank">published by the American Centers for Disease Control and Prevention</a> last month, the protection afforded by the Pfizer vaccine begins to decline around 4 months after the vaccination date. The CDC <a href="https://www.haaretz.com/us-news/u-s-cdc-backs-covid-boosters-for-high-risk-workers-1.10238697">recently endorsed the rollout</a> of a booster shot to several at-risk demographic categories, although <a href="https://www.haaretz.com/israel-news/.premium-america-is-months-behind-us-israel-s-top-covid-experts-explain-fda-decision-1.10221086">there has been some disagreement</a> about the scope of the proposed campaign.</p>
         
                               
@@ -1049,7 +1180,19 @@
                                 
                                 
                                             
-                                    
+                                    <figure>
+<amp-iframe width="360" height="180"
+            sandbox="allow-scripts allow-same-origin"
+            layout="responsive"
+            frameborder="0"
+            src="https://omny.fm/shows/haaretz-weekly/listen-the-afrikaners-who-found-a-new-home-in-isra/embed?style=artwork&image=1&share=1&download=1&description=1&subscribe=1&foreground=222222&background=f3f3f3&highlight=09a5d9">
+</amp-iframe>
+    <figcaption class="c-embed__caption u-mh--1 u-mt--0 u-type--micro">
+                <span class="u-fw--700">LISTEN: They were devout Christians in South Africa. Then they became Jews and moved to Israel</span>
+    <span class="u-fw--400"></span>
+    </figcaption>
+</figure>
+                            
                                                                                 
                             
                                                         
@@ -1094,12 +1237,7 @@
                                                         
                       <p>The new Green Pass includes a unique QR code, which business and facility owners are supposed to scan before granting holders entry to public amenities.</p>
         
-                    
-                                                                                                                                            
-                                                <figure class="c-figure c-figure--wide u-mh--0 u-pos--r">
-                    <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=320' width='320' alt='Israel is the first country in the world to set this new bar for vaccination status ' srcset='https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=320 320w,https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=480 480w,https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=640 640w,https://img.haarets.co.il/img/1.10262887/3144088966.jpg?width=800 800w' title='Israel is the first country in the world to set this new bar for vaccination status ' height='213' ></amp-img>                                        <figcaption class="c-figure__fig-caption u-mh--1 u-type--micro u-fw--700">Israel is the first country in the world to set this new bar for vaccination status  <span class="c-figure__fig-credit u-fw--400 u-d--ib">  Moti Milrod</span></figcaption>
-                                    </figure>
-                      
+                              
                                 
                                 
                                             
@@ -1123,7 +1261,24 @@
                                 
                                 
                                             
-                                    
+                                    <div class="infographic-timeline">
+    <div class="title main-title"></div>
+                    <div class="image">
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=320&height=240' width='320' alt='Serious cases  - just for outside image. not the actual info' srcset='https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=320&height=240 320w,https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=480&height=360 480w,https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=640&height=480 640w,https://img.haarets.co.il/img/1.10255249/4274079884.jpg?precrop=803,602,x36,y83&width=800&height=600 800w' height='240' ></amp-img>        </div>
+        <div class="credit">                                    צילום: Haaretz
+</div>
+    
+                        <div class="element">
+                <div class="title">The graphs that prove Pfizer vaccine works</div>
+                                <div class="text"><p>■ The 10% unvaxxed <a href="https://www.haaretz.com/israel-news/unvaxxed-10-of-israelis-are-73-of-serious-cases-65-of-deaths-1.10251639">fueling the COVID catastrophe</a>; account for 89% of <a href="https://www.haaretz.com/israel-news/.premium-israel-reaches-record-number-of-covid-patients-on-life-saving-ecmo-machines-1.10243212">ECMO</a> patients, <a href="https://www.haaretz.com/israel-news/these-unvaccinated-10-fuel-israel-s-covid-crisis-1.10251639">65% of serious cases</a> and <a href="https://www.haaretz.com/israel-news/israel-covid-unvaccinated-deaths-pfizer-booster-serious-cases-delta-1.10245471">60% of deaths</a></p></div>
+            </div>
+                                <div class="element">
+                <div class="title">Read more</div>
+                                <div class="text"><p>■ Israel <a href="https://www.haaretz.com/israel-news/.premium-with-new-covid-policy-israel-redefines-what-it-means-to-be-vaccinated-1.10262828">stripping million+ citizens of vaccine passport</a>. Here's why<br> ■ All COVID passes <a href="https://www.haaretz.com/israel-news/covid-vaccination-pass-israel-about-to-expire-here-s-how-to-get-a-new-one-1.10255927">expire</a>. Here's why and how to get a new one<br> ■ Israel to study <a href="https://www.haaretz.com/israel-news/.premium-israelis-to-study-possible-link-between-menstrual-irregularities-and-covid-vaccines-1.10253018">link between menstrual irregularities and vaccinations</a><br> ■ Booster shot <a href="https://www.haaretz.com/israel-news/israeli-study-finds-covid-booster-shot-increases-protection-elevenfold-for-elderly-1.10215149">increases protection elevenfold</a>, data shows<br> ■ Prominent <a href="https://www.haaretz.com/israel-news/israeli-anti-vaxxer-dies-of-covid-but-his-followers-remain-unwavering-1.10208605">Israeli anti-vaxxer dies of COVID</a></p></div>
+            </div>
+                                                            
+</div>
+
                                                                         
 
                             <div>
@@ -1135,27 +1290,6 @@
                                                         
                             
                                                         
-                    <aside class="c-related-article-text-only-wrapper u-mv--5">
-                <section>
-                    <ul class="c-related-article-text-only u-c--text-related u-ms--1em u-autospace--2 u-type--zeta">
-                                                
-                                                                                    <li>
-                                    
-         <article class="u-d--i">
-    <a class="c-related-article-text-only u-autospace--1" href="https://www.haaretz.com/israel-news/covid-vaccination-pass-israel-about-to-expire-here-s-how-to-get-a-new-one-1.10255927" >
-                    <h3 class="c-related-article-text-only__title u-type--zeta u-d--i">Israel's new COVID pass: Everything you need to know</h3>
-            </a>
-</article>                                      </li>
-                                                                                                                <li>
-                                    
-         <article class="u-d--i">
-    <a class="c-related-article-text-only u-autospace--1" href="https://www.haaretz.com/israel-news/figures-continue-to-drop-as-israel-s-covid-cabinet-set-to-meet-after-a-month-1.10261775" >
-                    <h3 class="c-related-article-text-only__title u-type--zeta u-d--i">Figures continue to drop as Israel's COVID cabinet set to meet after a month</h3>
-            </a>
-</article>                                      </li>
-                                                                                                                            </ul>
-                </section>
-            </aside>
                       <p>According to Davidovitch, who is also director of the School of Public Health at Ben-Gurion University of the Desert, Be’er Sheva, the Green Pass is “not a prize or punishment” but rather a public health measure based on consideration of clinical and epidemiological data.</p>
         
                               
@@ -1178,12 +1312,7 @@
                                                         
                       <p>He added that the data indicated that the increase in protection following a third shot could “be 10 times and up, compared to people who got the second dose.”</p>
         
-                    
-                                                                                                                                            
-                                                <figure class="c-figure c-figure--wide u-mh--0 u-pos--r">
-                    <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=320' width='320' alt='A nurse about to administer a booster shot at a medical center in Jerusalem last week.' srcset='https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=320 320w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=480 480w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=640 640w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=800 800w' title='A nurse about to administer a booster shot at a medical center in Jerusalem last week.' height='213' ></amp-img>                                        <figcaption class="c-figure__fig-caption u-mh--1 u-type--micro u-fw--700">A nurse about to administer a booster shot at a medical center in Jerusalem last week. <span class="c-figure__fig-credit u-fw--400 u-d--ib">Ohad Zwigenberg</span></figcaption>
-                                    </figure>
-                      
+                              
                                 
                                 
                                             
@@ -1193,7 +1322,12 @@
                                                         
                       <p><a href="https://www.haaretz.com/israel-news/covid-booster-shot-reduces-viral-load-limits-transmission-israeli-study-finds-1.10224174">A recent joint study</a> by the Technion – Israel Institute of Technology, Haifa, and KSM – the Maccabi Research and Innovation Center, found that about six months after someone receives the second dose of the vaccine, its effectiveness at reducing viral load dissipates. But a third dose slashes viral loads by a factor of four, thereby restoring the vaccine’s effectiveness to what it was shortly after the second dose was administered.</p>
         
-                              
+                    
+                                                                                                                                            
+                                                <figure class="c-figure c-figure--wide u-mh--0 u-pos--r">
+                    <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=320' width='320' alt='A nurse about to administer a booster shot at a medical center in Jerusalem last week.' srcset='https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=320 320w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=480 480w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=640 640w,https://img.haarets.co.il/img/1.10262824/793591027.jpg?width=800 800w' title='A nurse about to administer a booster shot at a medical center in Jerusalem last week.' height='213' ></amp-img>                                        <figcaption class="c-figure__fig-caption u-mh--1 u-type--micro u-fw--700">A nurse about to administer a booster shot at a medical center in Jerusalem last week. <span class="c-figure__fig-credit u-fw--400 u-d--ib">Ohad Zwigenberg</span></figcaption>
+                                    </figure>
+                      
                                 
                                 
                                             
@@ -1209,6 +1343,27 @@
                                                         
                             
                                                         
+                    <aside class="c-related-article-text-only-wrapper u-mv--5">
+                <section>
+                    <ul class="c-related-article-text-only u-c--text-related u-ms--1em u-autospace--2 u-type--zeta">
+                                                
+                                                                                    <li>
+                                    
+         <article class="u-d--i">
+    <a class="c-related-article-text-only u-autospace--1" href="https://www.haaretz.com/israel-news/israel-s-covid-figures-continue-to-drop-serious-cases-at-two-month-low-1.10264332" >
+                    <h3 class="c-related-article-text-only__title u-type--zeta u-d--i">Serious COVID cases in Israel at two-month low; further drop in key metrics</h3>
+            </a>
+</article>                                      </li>
+                                                                                                                <li>
+                                    
+         <article class="u-d--i">
+    <a class="c-related-article-text-only u-autospace--1" href="https://www.haaretz.com/israel-news/covid-vaccination-pass-israel-about-to-expire-here-s-how-to-get-a-new-one-1.10255927" >
+                    <h3 class="c-related-article-text-only__title u-type--zeta u-d--i">Israel's new COVID pass: Everything you need to know</h3>
+            </a>
+</article>                                      </li>
+                                                                                                                            </ul>
+                </section>
+            </aside>
                       <p>According to data <a href="https://www.cdc.gov/mmwr/volumes/70/wr/mm7038e1.htm?s_cid=mm7038e1_w" target="_blank">published by the American Centers for Disease Control and Prevention</a> last month, the protection afforded by the Pfizer vaccine begins to decline around 4 months after the vaccination date. The CDC <a href="https://www.haaretz.com/us-news/u-s-cdc-backs-covid-boosters-for-high-risk-workers-1.10238697">recently endorsed the rollout</a> of a booster shot to several at-risk demographic categories, although <a href="https://www.haaretz.com/israel-news/.premium-america-is-months-behind-us-israel-s-top-covid-experts-explain-fda-decision-1.10221086">there has been some disagreement</a> about the scope of the proposed campaign.</p>
         
                               
@@ -1491,42 +1646,42 @@
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=320&height=180' width='320' alt='אסייג. צורחת כאילו היא חוזה בהתפוצצות ההינדנבורג - ' srcset='https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=320&height=180 320w,https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=480&height=270 480w,https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=640&height=360 640w,https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=800&height=450 800w' title='אסייג. צורחת כאילו היא חוזה בהתפוצצות ההינדנבורג - ' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/gallery/television/tv-review/.premium-1.10263125">הערוץ הטוטליטרי העמיד את חייליו בשורה, וכולם שואגים את ההמנון</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10264869/2484413600.jpg?precrop=1635,948,x413,y181&width=320&height=180' width='320' alt='רביד פלוטניק, פסטיבל אינדינגב 2019. כל מוזיקאי רוצה שמסות של אנשים יקשיבו לו - צילום: תומר אפלבאום' srcset='https://img.haarets.co.il/img/1.10264869/2484413600.jpg?precrop=1635,948,x413,y181&width=320&height=180 320w,https://img.haarets.co.il/img/1.10264869/2484413600.jpg?precrop=1635,948,x413,y181&width=480&height=270 480w,https://img.haarets.co.il/img/1.10264869/2484413600.jpg?precrop=1635,948,x413,y181&width=640&height=360 640w,https://img.haarets.co.il/img/1.10264869/2484413600.jpg?precrop=1635,948,x413,y181&width=800&height=450 800w' title='רביד פלוטניק, פסטיבל אינדינגב 2019. כל מוזיקאי רוצה שמסות של אנשים יקשיבו לו - צילום: תומר אפלבאום' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/gallery/music/musicreview/.premium-MAGAZINE-1.10264876">החדש של רביד פלוטניק הוא תופעה נדירה. כמעט מדע בדיוני</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/gallery/television/tv-review/.premium-1.10263125"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/gallery/music/musicreview/.premium-MAGAZINE-1.10264876"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=320&height=180' width='320' alt='נפתלין. קרבה מטרידה למוקדי כוח והשפעה - צילום: מיכל פתאל' srcset='https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=320&height=180 320w,https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=480&height=270 480w,https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=640&height=360 640w,https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=800&height=450 800w' title='נפתלין. קרבה מטרידה למוקדי כוח והשפעה - צילום: מיכל פתאל' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/opinions/.premium.HIGHLIGHT-1.10262643">החנינה של הנשיא לאסירה המקושרת זועקת מעיוורון ואפליה</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10265825/2207969188.jpg?precrop=2196,1274,x0,y194&width=320&height=180' width='320' alt='מיכאלי, סער, בנט, לפיד וגנץ בכנסת, הים - צילום: אוהד צויגנברג' srcset='https://img.haarets.co.il/img/1.10265825/2207969188.jpg?precrop=2196,1274,x0,y194&width=320&height=180 320w,https://img.haarets.co.il/img/1.10265825/2207969188.jpg?precrop=2196,1274,x0,y194&width=480&height=270 480w,https://img.haarets.co.il/img/1.10265825/2207969188.jpg?precrop=2196,1274,x0,y194&width=640&height=360 640w,https://img.haarets.co.il/img/1.10265825/2207969188.jpg?precrop=2196,1274,x0,y194&width=800&height=450 800w' title='מיכאלי, סער, בנט, לפיד וגנץ בכנסת, הים - צילום: אוהד צויגנברג' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/digital/daily/.premium-1.10265673">רוב הציבור רוצה בחוק נגד נתניהו. לא בטוח שבכירי הקואליציה בעניין</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/opinions/.premium.HIGHLIGHT-1.10262643"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/digital/daily/.premium-1.10265673"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=320&height=180' width='320' alt='Samaung Galaxy Z Fold 3 - צילום: גד גניר' srcset='https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=320&height=180 320w,https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=480&height=270 480w,https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=640&height=360 640w,https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=800&height=450 800w' title='Samaung Galaxy Z Fold 3 - צילום: גד גניר' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/captain/gadget/.premium-MAGAZINE-1.10261780">אל תרוצו לקנות לפני שאתם מבינים למה אתם נכנסים</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10265519/2917684165.jpg?precrop=2200,1277,x0,y75&width=320&height=180' width='320' alt='העיר וולינגטון, לפני כחודש. נגיף הדלתא התפשט - צילום: Mark Mitchell/אי־פי' srcset='https://img.haarets.co.il/img/1.10265519/2917684165.jpg?precrop=2200,1277,x0,y75&width=320&height=180 320w,https://img.haarets.co.il/img/1.10265519/2917684165.jpg?precrop=2200,1277,x0,y75&width=480&height=270 480w,https://img.haarets.co.il/img/1.10265519/2917684165.jpg?precrop=2200,1277,x0,y75&width=640&height=360 640w,https://img.haarets.co.il/img/1.10265519/2917684165.jpg?precrop=2200,1277,x0,y75&width=800&height=450 800w' title='העיר וולינגטון, לפני כחודש. נגיף הדלתא התפשט - צילום: Mark Mitchell/אי־פי' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/news/world/asia/.premium-1.10265403">זה לא עובד: ניו זילנד זונחת את מדיניות "אפס הדבקה"</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/captain/gadget/.premium-MAGAZINE-1.10261780"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/news/world/asia/.premium-1.10265403"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=320&height=180' width='320' alt='מחלף השלום בתל אביב - צילום: עופר וקנין' srcset='https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=320&height=180 320w,https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=480&height=270 480w,https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=640&height=360 640w,https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=800&height=450 800w' title='מחלף השלום בתל אביב - צילום: עופר וקנין' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/tmr/.premium.HIGHLIGHT-1.10263196">בקצב הזה, לא יישאר מי שישלם את אגרת הגודש בכניסה לתל אביב</a>
+            <amp-video loop muted width='320' height='180' layout='responsive' autoplay src="https://gif.haarets.co.il/image/fetch/w_415,h_241,x_0,y_0,c_crop,g_north_west/w_360,q_auto,c_fill,f_mp4/fl_lossy.any_format.preserve_transparency.progressive:none/https://www.haaretz.co.il/polopoly_fs/1.10265469!/image/2009018289.gif" ></amp-video>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/howtolive/not-a-boomer/.premium-MAGAZINE-1.10264930">למה אתם חייבים להפסיק לתקן לאחרים את העברית</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/tmr/.premium.HIGHLIGHT-1.10263196"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/howtolive/not-a-boomer/.premium-MAGAZINE-1.10264930"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10260192/435447317.jpg?precrop=2048,1192,x0,y59&width=320&height=180' width='320' alt='רוסיליו. &#34;מה שאני רוצה זה להחזיק שיר בצורה יציבה&#34; - צילום: הדס פרוש' srcset='https://img.haarets.co.il/img/1.10260192/435447317.jpg?precrop=2048,1192,x0,y59&width=320&height=180 320w,https://img.haarets.co.il/img/1.10260192/435447317.jpg?precrop=2048,1192,x0,y59&width=480&height=270 480w,https://img.haarets.co.il/img/1.10260192/435447317.jpg?precrop=2048,1192,x0,y59&width=640&height=360 640w,https://img.haarets.co.il/img/1.10260192/435447317.jpg?precrop=2048,1192,x0,y59&width=800&height=450 800w' title='רוסיליו. &#34;מה שאני רוצה זה להחזיק שיר בצורה יציבה&#34; - צילום: הדס פרוש' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/gallery/music/.premium-MAGAZINE-1.10260197">"אני רוצה להצליח, אבל 60 מיליון צפיות נראה לי לא בריא"</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10264405/804964157.jpg?precrop=1901,1107,x23,y15&width=320&height=180' width='320' alt='האבקת מריחואונה  - צילום: Don Ryan/אי־פי' srcset='https://img.haarets.co.il/img/1.10264405/804964157.jpg?precrop=1901,1107,x23,y15&width=320&height=180 320w,https://img.haarets.co.il/img/1.10264405/804964157.jpg?precrop=1901,1107,x23,y15&width=480&height=270 480w,https://img.haarets.co.il/img/1.10264405/804964157.jpg?precrop=1901,1107,x23,y15&width=640&height=360 640w,https://img.haarets.co.il/img/1.10264405/804964157.jpg?precrop=1901,1107,x23,y15&width=800&height=450 800w' title='האבקת מריחואונה  - צילום: Don Ryan/אי־פי' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/digital/podcast/.premium-PODCAST-1.10262602">מה קורה לגוף כשאנחנו מעשנים מריחואנה?</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/gallery/music/.premium-MAGAZINE-1.10260197"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/digital/podcast/.premium-PODCAST-1.10262602"></a>
 </article>          </div>    
         </div>
     </aside>
