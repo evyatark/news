@@ -34,6 +34,7 @@
             
     
 
+            <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
         
 				
 
@@ -558,7 +559,7 @@
 <div id="byline" class="c-article-byline u-mh--2 ">
     <div class="c-article-byline__content u-bdb--1px(2,solid,border-neutral) u-bdt--1px(2,solid,border-neutral) u-type--micro">
                 <address class="c-article-byline__writer u-d--ib u-fw--700 u-c--primary u-fs--n"><span class="js-stat-util-info u-c--text-pale" data-statutil-writer="גרדיאן">גרדיאן</span></address><span class="u-fw--700 u-c--primary">&#32;ו</span><address class="c-article-byline__writer u-d--ib u-fw--700 u-c--primary u-fs--n"><span class="js-stat-util-info u-c--text-pale" data-statutil-writer="הארץ">הארץ</span></address>                            <div class="c-article-byline__pubdate u-c--text-pale">
-                <time datetime="2021-10-02T21:12:21+0300">02.10.2021</time></div>
+                <time datetime="2021-10-02T21:12:21+0300">02.10.2021</time>| עודכן ב: <time datetime="2021-10-03T17:19:00+0300">03.10.2021</time></div>
             </div>
 </div>
 <!-- Byline end -->            <div class="c-social-share u-mt--2 u-mb--1 ">
@@ -852,7 +853,61 @@
                                     
                             
                                                         
-              </p>          </section>
+              </p>              <div class="c-tag-list u-mv--4 ">
+    <div class="c-tag-form__text u-fw--700 u-pl--7 u-type--milli">תגיות קשורות:</div>
+    <ul class="c-tag-list-items u-d--f u-fxw--w">
+                        
+                                    <li tabindex="1" role="listitem" class="u-d--f u-ml--3 u-mt--1.5 u-type--zeta" on="tap:tagForm-3565.toggleVisibility">
+                    <svg id="bell-3565" class="o-icn c-tag-list-items-icon u-type--zeta u-c--primary2" aria-label="צרפת" role="img"><use xlink:href="#icon-alerts"></use></svg>
+                    <svg id="success-3565" hidden class="o-icn c-tag-list-items-icon u-c--success-v" viewBox="0 0 256 256">
+                        <path fill="currentColor" d="M209.7 44L100.1 163.2l-3.1 3.6-3.1-3.4-46.4-48.5-22.3 20.4 72.4 77 135-148.7z"></path>
+                    </svg>
+                    צרפת
+                </li>
+                        </ul>
+
+                        <div hidden id="tagForm-3565">
+    <div class="c-tag-form u-bgc--formbg u-mt--2 u-pos--r">
+        <div class="u-p--2">
+            <button type="button" class="c-tag-form__close-button u-pos--a u-t--1 u-l--1 u-w--3 u-h--3" on="tap:tagForm-3565.hide">
+                <svg class="u-w--11px u-h--11px" viewBox="0 0 256 256" aria-label="close">
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </button>
+
+            <form action="https://services.haaretz.co.il/user-alerts/register" action-xhr="https://services.haaretz.co.il/user-alerts/register" method="get" target="_top" custom-validation-reporting="show-first-on-submit" on="submit-success:bell-3565.hide,success-3565.show">
+                <div class="c-tag-form__hide-on-submit">
+                    <p class="c-tag-form__text u-fw--700 u-pl--7 u-type--milli">שלחו לי התראה כשיש כתבה חדשה על <a class="react-style-link" href="/misc/tags/TAG-Paris-1.3565">צרפת</a></p>
+                    <div class="u-h--20px">
+                        <label for="email-3565" class="c-tag-form__email u-type--micro u-ph--2px u-d--ib u-bgc--white u-mr--1 u-fw--700">דוא"ל <sup class="u-c--alert">*</sup><label>
+                    </div>
+                    <input aria-describedby="text-3565" name="email" class="c-tag-form__input u-w--100%" id="email-3565" type="email" required/>
+                    <div visible-when-invalid="valueMissing" validation-for="email-3565" class="u-c--form-text u-type--micro u-c--alert">יש להכניס כתובת דואר אלקטרוני</div>
+                    <div visible-when-invalid="typeMismatch" validation-for="email-3565" class="u-c--form-text u-type--micro u-c--alert">כתובת דואר אלקטרוני אינה תקינה</div>
+                    <input type="hidden" name="resourceType" value="articleTag"/>
+                    <input type="hidden" name="site" value="htz"/>
+                    <input type="hidden" name="resourceId" value="1.3565"/>
+                    <input type="hidden" name="platform" value="amp"/>
+                    <input type="hidden" name="feature" value="Tag Alert - article page"/>
+                    <template amp-access-template type="amp-mustache">
+                        <input type="hidden" name="readerId" value="{{rid}}"/>
+                    </template>
+                    <div class="u-c--form-text u-type--micro" id="text-3565">אנא הזינו כתובת אימייל</div>
+                    <button class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5" type="submit">שלחו</button>
+                </div>
+                <div submit-error class="c-tag-form__error u-mt--5 u-ta--c">
+                    <p class="c-tag-form__text u-fw--700 u-type--milli">ההרשמה נכשלה, אנא נסה שנית מאוחר יותר.</p>
+                    <button on="tap:tagForm-3565.hide" class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5">סגור</button>
+                </div>
+                <div submit-success class="c-tag-form__success u-mt--5 u-ta--c">
+                    <p class="c-tag-form__text u-fw--700 u-type--milli">נרשמת בהצלחה!</p>
+                    <button on="tap:tagForm-3565.hide" class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5">סגור</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>            </div>
+    </section>
             </section>
 
     <section amp-access="ampConf.activation AND currentViews >= ampConf.maxViews AND NOT subscriber">
@@ -1049,7 +1104,61 @@
                                     
                             
                                                         
-              </p>          </section>
+              </p>              <div class="c-tag-list u-mv--4 ">
+    <div class="c-tag-form__text u-fw--700 u-pl--7 u-type--milli">תגיות קשורות:</div>
+    <ul class="c-tag-list-items u-d--f u-fxw--w">
+                        
+                                    <li tabindex="1" role="listitem" class="u-d--f u-ml--3 u-mt--1.5 u-type--zeta" on="tap:agForm-3565.hide,tagForm-3565.toggleVisibility">
+                    <svg id="bell-3565" class="o-icn c-tag-list-items-icon u-type--zeta u-c--primary2" aria-label="צרפת" role="img"><use xlink:href="#icon-alerts"></use></svg>
+                    <svg id="success-3565" hidden class="o-icn c-tag-list-items-icon u-c--success-v" viewBox="0 0 256 256">
+                        <path fill="currentColor" d="M209.7 44L100.1 163.2l-3.1 3.6-3.1-3.4-46.4-48.5-22.3 20.4 72.4 77 135-148.7z"></path>
+                    </svg>
+                    צרפת
+                </li>
+                        </ul>
+
+                        <div hidden id="tagForm-3565">
+    <div class="c-tag-form u-bgc--formbg u-mt--2 u-pos--r">
+        <div class="u-p--2">
+            <button type="button" class="c-tag-form__close-button u-pos--a u-t--1 u-l--1 u-w--3 u-h--3" on="tap:tagForm-3565.hide">
+                <svg class="u-w--11px u-h--11px" viewBox="0 0 256 256" aria-label="close">
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </button>
+
+            <form action="https://services.haaretz.co.il/user-alerts/register" action-xhr="https://services.haaretz.co.il/user-alerts/register" method="get" target="_top" custom-validation-reporting="show-first-on-submit" on="submit-success:bell-3565.hide,success-3565.show">
+                <div class="c-tag-form__hide-on-submit">
+                    <p class="c-tag-form__text u-fw--700 u-pl--7 u-type--milli">שלחו לי התראה כשיש כתבה חדשה על <a class="react-style-link" href="/misc/tags/TAG-Paris-1.3565">צרפת</a></p>
+                    <div class="u-h--20px">
+                        <label for="email-3565" class="c-tag-form__email u-type--micro u-ph--2px u-d--ib u-bgc--white u-mr--1 u-fw--700">דוא"ל <sup class="u-c--alert">*</sup><label>
+                    </div>
+                    <input aria-describedby="text-3565" name="email" class="c-tag-form__input u-w--100%" id="email-3565" type="email" required/>
+                    <div visible-when-invalid="valueMissing" validation-for="email-3565" class="u-c--form-text u-type--micro u-c--alert">יש להכניס כתובת דואר אלקטרוני</div>
+                    <div visible-when-invalid="typeMismatch" validation-for="email-3565" class="u-c--form-text u-type--micro u-c--alert">כתובת דואר אלקטרוני אינה תקינה</div>
+                    <input type="hidden" name="resourceType" value="articleTag"/>
+                    <input type="hidden" name="site" value="htz"/>
+                    <input type="hidden" name="resourceId" value="1.3565"/>
+                    <input type="hidden" name="platform" value="amp"/>
+                    <input type="hidden" name="feature" value="Tag Alert - article page"/>
+                    <template amp-access-template type="amp-mustache">
+                        <input type="hidden" name="readerId" value="{{rid}}"/>
+                    </template>
+                    <div class="u-c--form-text u-type--micro" id="text-3565">אנא הזינו כתובת אימייל</div>
+                    <button class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5" type="submit">שלחו</button>
+                </div>
+                <div submit-error class="c-tag-form__error u-mt--5 u-ta--c">
+                    <p class="c-tag-form__text u-fw--700 u-type--milli">ההרשמה נכשלה, אנא נסה שנית מאוחר יותר.</p>
+                    <button on="tap:tagForm-3565.hide" class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5">סגור</button>
+                </div>
+                <div submit-success class="c-tag-form__success u-mt--5 u-ta--c">
+                    <p class="c-tag-form__text u-fw--700 u-type--milli">נרשמת בהצלחה!</p>
+                    <button on="tap:tagForm-3565.hide" class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5">סגור</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>            </div>
+    </section>
                         </div>
         <script id="goToApp" type="text/plain" target="amp-script">
         const userAgent = navigator.userAgent.toLowerCase();
@@ -1153,42 +1262,42 @@
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10261751/3325078510.jpeg?precrop=1182,684,x0,y20&width=320&height=180' width='320' alt='אינס טרחוס. &#34;כשמדובר ברכישת ידע, שום דבר - כולל הגיל - אינו גורם מגביל&#34; - צילום: צילום מסך, ערוץ 7 של קוסטה ריקה' srcset='https://img.haarets.co.il/img/1.10261751/3325078510.jpeg?precrop=1182,684,x0,y20&width=320&height=180 320w,https://img.haarets.co.il/img/1.10261751/3325078510.jpeg?precrop=1182,684,x0,y20&width=480&height=270 480w,https://img.haarets.co.il/img/1.10261751/3325078510.jpeg?precrop=1182,684,x0,y20&width=640&height=360 640w,https://img.haarets.co.il/img/1.10261751/3325078510.jpeg?precrop=1182,684,x0,y20&width=800&height=450 800w' title='אינס טרחוס. &#34;כשמדובר ברכישת ידע, שום דבר - כולל הגיל - אינו גורם מגביל&#34; - צילום: צילום מסך, ערוץ 7 של קוסטה ריקה' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/blogs/latinit/BLOG-1.10261599">בת 89 היא הזוכה הכי מבוגרת ב"מי רוצה להיות מיליונר"</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=320&height=180' width='320' alt='אסייג. צורחת כאילו היא חוזה בהתפוצצות ההינדנבורג - ' srcset='https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=320&height=180 320w,https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=480&height=270 480w,https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=640&height=360 640w,https://img.haarets.co.il/img/1.10263124/4140608083.jpg?precrop=1857,1079,x154,y166&width=800&height=450 800w' title='אסייג. צורחת כאילו היא חוזה בהתפוצצות ההינדנבורג - ' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/gallery/television/tv-review/.premium-1.10263125">הערוץ הטוטליטרי העמיד את חייליו בשורה, וכולם שואגים את ההמנון</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/blogs/latinit/BLOG-1.10261599"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/gallery/television/tv-review/.premium-1.10263125"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262317/4040801493.jpg?precrop=2200,1275,x0,y48&width=320&height=180' width='320' alt='קומישינר ה-NBA אדם סילבר. הליגה מנסה לתמרן בין פעולות הכרחיות לשמירה על יחסים טובים עם השחקנים - צילום: אי־פי' srcset='https://img.haarets.co.il/img/1.10262317/4040801493.jpg?precrop=2200,1275,x0,y48&width=320&height=180 320w,https://img.haarets.co.il/img/1.10262317/4040801493.jpg?precrop=2200,1275,x0,y48&width=480&height=270 480w,https://img.haarets.co.il/img/1.10262317/4040801493.jpg?precrop=2200,1275,x0,y48&width=640&height=360 640w,https://img.haarets.co.il/img/1.10262317/4040801493.jpg?precrop=2200,1275,x0,y48&width=800&height=450 800w' title='קומישינר ה-NBA אדם סילבר. הליגה מנסה לתמרן בין פעולות הכרחיות לשמירה על יחסים טובים עם השחקנים - צילום: אי־פי' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/sport/nba/.premium-MAGAZINE-1.10262261">הקורונה קורעת את ה-NBA, בזמן שהאיש החזק בליגה נעלם</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=320&height=180' width='320' alt='נפתלין. קרבה מטרידה למוקדי כוח והשפעה - צילום: מיכל פתאל' srcset='https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=320&height=180 320w,https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=480&height=270 480w,https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=640&height=360 640w,https://img.haarets.co.il/img/1.10262798/4235271492.jpg?precrop=2045,1191,x0,y63&width=800&height=450 800w' title='נפתלין. קרבה מטרידה למוקדי כוח והשפעה - צילום: מיכל פתאל' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/opinions/.premium.HIGHLIGHT-1.10262643">החנינה של הנשיא לאסירה המקושרת זועקת מעיוורון ואפליה</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/sport/nba/.premium-MAGAZINE-1.10262261"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/opinions/.premium.HIGHLIGHT-1.10262643"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10254954/3302501794.jpg?precrop=2026,1181,x22,y184&width=320&height=180' width='320' alt='צילום: אילן אסייג' srcset='https://img.haarets.co.il/img/1.10254954/3302501794.jpg?precrop=2026,1181,x22,y184&width=320&height=180 320w,https://img.haarets.co.il/img/1.10254954/3302501794.jpg?precrop=2026,1181,x22,y184&width=480&height=270 480w,https://img.haarets.co.il/img/1.10254954/3302501794.jpg?precrop=2026,1181,x22,y184&width=640&height=360 640w,https://img.haarets.co.il/img/1.10254954/3302501794.jpg?precrop=2026,1181,x22,y184&width=800&height=450 800w' title='צילום: אילן אסייג' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/tmr/.premium-MAGAZINE-1.10254992">איך נהפכו דוכני ארטיקים בחופי ראשון לציון למסעדות מצליחות?</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10263367/3454720655.jpg?precrop=1986,1154,x0,y84&width=320&height=180' width='320' alt='מתוך &#34;עלומים&#34; - צילום: כאן 11' srcset='https://img.haarets.co.il/img/1.10263367/3454720655.jpg?precrop=1986,1154,x0,y84&width=320&height=180 320w,https://img.haarets.co.il/img/1.10263367/3454720655.jpg?precrop=1986,1154,x0,y84&width=480&height=270 480w,https://img.haarets.co.il/img/1.10263367/3454720655.jpg?precrop=1986,1154,x0,y84&width=640&height=360 640w,https://img.haarets.co.il/img/1.10263367/3454720655.jpg?precrop=1986,1154,x0,y84&width=800&height=450 800w' title='מתוך &#34;עלומים&#34; - צילום: כאן 11' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/gallery/television/guide/.premium-1.10262678">צוות שחקנים חלומי נושא על כתפו נושא כאוב בחברה הישראלית</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/tmr/.premium-MAGAZINE-1.10254992"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/gallery/television/guide/.premium-1.10262678"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10260095/3749050726.jpg?width=320&height=180' width='320' alt='עמדת בדיקה מהירה לקורונה ברמת אביב. הסגרים, הבידודים, המסכות וההפחדה גבו מחירים כבדים מילדי ישראל - צילום: הדס פרוש' srcset='https://img.haarets.co.il/img/1.10260095/3749050726.jpg?width=320&height=180 320w,https://img.haarets.co.il/img/1.10260095/3749050726.jpg?width=480&height=270 480w,https://img.haarets.co.il/img/1.10260095/3749050726.jpg?width=640&height=360 640w,https://img.haarets.co.il/img/1.10260095/3749050726.jpg?width=800&height=450 800w' title='עמדת בדיקה מהירה לקורונה ברמת אביב. הסגרים, הבידודים, המסכות וההפחדה גבו מחירים כבדים מילדי ישראל - צילום: הדס פרוש' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/opinions/.premium-1.10260031">איננו מכחישי קורונה. אנחנו רק מבקשים להקשיב גם לקולות אחרים</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=320&height=180' width='320' alt='Samaung Galaxy Z Fold 3 - צילום: גד גניר' srcset='https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=320&height=180 320w,https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=480&height=270 480w,https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=640&height=360 640w,https://img.haarets.co.il/img/1.10262251/1253647926.jpg?precrop=2048,1191,x0,y109&width=800&height=450 800w' title='Samaung Galaxy Z Fold 3 - צילום: גד גניר' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/captain/gadget/.premium-MAGAZINE-1.10261780">אל תרוצו לקנות לפני שאתם מבינים למה אתם נכנסים</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/opinions/.premium-1.10260031"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/captain/gadget/.premium-MAGAZINE-1.10261780"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10262381/1422909840.jpg?precrop=2044,1187,x4,y67&width=320&height=180' width='320' alt='דניאלה ביאנקי ושון קונרי ב&#34;מרוסיה באהבה&#34;. אישה בכל נמל - צילום: Danjaq LLC and United Artists Co' srcset='https://img.haarets.co.il/img/1.10262381/1422909840.jpg?precrop=2044,1187,x4,y67&width=320&height=180 320w,https://img.haarets.co.il/img/1.10262381/1422909840.jpg?precrop=2044,1187,x4,y67&width=480&height=270 480w,https://img.haarets.co.il/img/1.10262381/1422909840.jpg?precrop=2044,1187,x4,y67&width=640&height=360 640w,https://img.haarets.co.il/img/1.10262381/1422909840.jpg?precrop=2044,1187,x4,y67&width=800&height=450 800w' title='דניאלה ביאנקי ושון קונרי ב&#34;מרוסיה באהבה&#34;. אישה בכל נמל - צילום: Danjaq LLC and United Artists Co' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/gallery/cinema/.premium-MAGAZINE-1.10255292">הזמנים השתנו, הגאדג'טים שודרגו, אבל נערות בונד הן לנצח</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=320&height=180' width='320' alt='מחלף השלום בתל אביב - צילום: עופר וקנין' srcset='https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=320&height=180 320w,https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=480&height=270 480w,https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=640&height=360 640w,https://img.haarets.co.il/img/1.10263459/2955398896.jpg?precrop=1774,1029,x0,y0&width=800&height=450 800w' title='מחלף השלום בתל אביב - צילום: עופר וקנין' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/tmr/.premium.HIGHLIGHT-1.10263196">בקצב הזה, לא יישאר מי שישלם את אגרת הגודש בכניסה לתל אביב</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/gallery/cinema/.premium-MAGAZINE-1.10255292"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/tmr/.premium.HIGHLIGHT-1.10263196"></a>
 </article>          </div>    
         </div>
     </aside>
