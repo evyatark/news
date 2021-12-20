@@ -568,8 +568,8 @@
                     
                                                                 <div class="c-article-byline__pubdate u-c--text-pale">
                             <meta property="article:published" itemprop="datePublished" content="2021-12-17T14:44:11+0200" />
-                            <meta property="article:modified" itemprop="dateModified" content="2021-12-19T08:23:00+0200" />
-                            <time datetime="2021-12-17T14:44:11+0200">17.12.2021</time>| עודכן ב: <time datetime="2021-12-19T08:23:00+0200">08:23</time></div>
+                            <meta property="article:modified" itemprop="dateModified" content="2021-12-19T15:09:00+0200" />
+                            <time datetime="2021-12-17T14:44:11+0200">17.12.2021</time>| עודכן ב: <time datetime="2021-12-19T15:09:00+0200">19.12.2021</time></div>
                                                             </div>
             </div>
         </div>
@@ -724,7 +724,7 @@
         </template>
 </section>    <section amp-access="NOT ampConf.activation OR currentViews < ampConf.maxViews OR subscriber">
                     <section class="b-entry c-article-entry u-autospace--4">
-                <p>משה אביסרור, בעלי חברת הנדל"ן והבנייה אביסרור - מהפעילות והגדולות ביותר במחוז הדרום ובבאר שבע, מת ממחלה בגיל 86. הלווייתו התקיימה היום (ו') בירוחם.</p>
+                <p>משה אביסרור, בעלי חברת הנדל"ן והבנייה אביסרור - מהפעילות והגדולות ביותר במחוז הדרום ובבאר שבע,&nbsp;נפטר ממחלה בגיל 86. הלווייתו התקיימה היום (ו') בירוחם.</p>
         
                     
                                                                                                                                             
@@ -798,13 +798,67 @@
                                                                                 
                             
                                                         
-              </p>          </section>
+              </p>              <div class="c-tag-list u-mv--4 ">
+    <div class="c-tag-form__text u-fw--700 u-pl--7 u-type--milli">תגיות קשורות:</div>
+    <ul class="c-tag-list-items u-d--f u-fxw--w">
+                        
+                                    <li tabindex="1" role="listitem" class="u-d--f u-ml--3 u-mt--1.5 u-type--zeta" on="tap:tagForm-3979.toggleVisibility">
+                    <svg id="bell-3979" class="o-icn c-tag-list-items-icon u-type--zeta u-c--primary2" aria-label="נגב" role="img"><use xlink:href="#icon-alerts"></use></svg>
+                    <svg id="success-3979" hidden class="o-icn c-tag-list-items-icon u-c--success-v" viewBox="0 0 256 256">
+                        <path fill="currentColor" d="M209.7 44L100.1 163.2l-3.1 3.6-3.1-3.4-46.4-48.5-22.3 20.4 72.4 77 135-148.7z"></path>
+                    </svg>
+                    נגב
+                </li>
+                        </ul>
+
+                        <div hidden id="tagForm-3979">
+    <div class="c-tag-form u-bgc--formbg u-mt--2 u-pos--r">
+        <div class="u-p--2">
+            <button type="button" class="c-tag-form__close-button u-pos--a u-t--1 u-l--1 u-w--3 u-h--3" on="tap:tagForm-3979.hide">
+                <svg class="u-w--11px u-h--11px" viewBox="0 0 256 256" aria-label="close">
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </button>
+
+            <form action="https://services.haaretz.co.il/user-alerts/register" action-xhr="https://services.haaretz.co.il/user-alerts/register" method="get" target="_top" custom-validation-reporting="show-first-on-submit" on="submit-success:bell-3979.hide,success-3979.show">
+                <div class="c-tag-form__hide-on-submit">
+                    <p class="c-tag-form__text u-fw--700 u-pl--7 u-type--milli">שלחו לי התראה כשיש כתבה חדשה על <a class="react-style-link" href="https://www.themarker.com/misc/tags/TAG-1.3979">נגב</a></p>
+                    <div class="u-h--20px">
+                        <label for="email-3979" class="c-tag-form__email u-type--micro u-ph--2px u-d--ib u-bgc--white u-mr--1 u-fw--700">דוא"ל <sup class="u-c--alert">*</sup><label>
+                    </div>
+                    <input aria-describedby="text-3979" name="email" class="c-tag-form__input u-w--100%" id="email-3979" type="email" required/>
+                    <div visible-when-invalid="valueMissing" validation-for="email-3979" class="u-c--form-text u-type--micro u-c--alert">יש להכניס כתובת דואר אלקטרוני</div>
+                    <div visible-when-invalid="typeMismatch" validation-for="email-3979" class="u-c--form-text u-type--micro u-c--alert">כתובת דואר אלקטרוני אינה תקינה</div>
+                    <input type="hidden" name="resourceType" value="articleTag"/>
+                    <input type="hidden" name="site" value="htz"/>
+                    <input type="hidden" name="resourceId" value="1.3979"/>
+                    <input type="hidden" name="platform" value="amp"/>
+                    <input type="hidden" name="feature" value="Tag Alert - article page"/>
+                    <template amp-access-template type="amp-mustache">
+                        <input type="hidden" name="readerId" value="{{rid}}"/>
+                    </template>
+                    <div class="u-c--form-text u-type--micro" id="text-3979">אנא הזינו כתובת אימייל</div>
+                    <button class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5" type="submit">שלחו</button>
+                </div>
+                <div submit-error class="c-tag-form__error u-mt--5 u-ta--c">
+                    <p class="c-tag-form__text u-fw--700 u-type--milli">ההרשמה נכשלה, אנא נסה שנית מאוחר יותר.</p>
+                    <button on="tap:tagForm-3979.hide" class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5">סגור</button>
+                </div>
+                <div submit-success class="c-tag-form__success u-mt--5 u-ta--c">
+                    <p class="c-tag-form__text u-fw--700 u-type--milli">נרשמת בהצלחה!</p>
+                    <button on="tap:tagForm-3979.hide" class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5">סגור</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>            </div>
+    </section>
             </section>
 
     <section amp-access="ampConf.activation AND currentViews >= ampConf.maxViews AND NOT subscriber">
             <div class="amp-article-content">
                             <section class="b-entry c-article-entry u-autospace--4">
-                <p>משה אביסרור, בעלי חברת הנדל"ן והבנייה אביסרור - מהפעילות והגדולות ביותר במחוז הדרום ובבאר שבע, מת ממחלה בגיל 86. הלווייתו התקיימה היום (ו') בירוחם.</p>
+                <p>משה אביסרור, בעלי חברת הנדל"ן והבנייה אביסרור - מהפעילות והגדולות ביותר במחוז הדרום ובבאר שבע,&nbsp;נפטר ממחלה בגיל 86. הלווייתו התקיימה היום (ו') בירוחם.</p>
         
                     
                                                                                                                                             
@@ -878,7 +932,61 @@
                                                                                 
                             
                                                         
-              </p>          </section>
+              </p>              <div class="c-tag-list u-mv--4 ">
+    <div class="c-tag-form__text u-fw--700 u-pl--7 u-type--milli">תגיות קשורות:</div>
+    <ul class="c-tag-list-items u-d--f u-fxw--w">
+                        
+                                    <li tabindex="1" role="listitem" class="u-d--f u-ml--3 u-mt--1.5 u-type--zeta" on="tap:agForm-3979.hide,tagForm-3979.toggleVisibility">
+                    <svg id="bell-3979" class="o-icn c-tag-list-items-icon u-type--zeta u-c--primary2" aria-label="נגב" role="img"><use xlink:href="#icon-alerts"></use></svg>
+                    <svg id="success-3979" hidden class="o-icn c-tag-list-items-icon u-c--success-v" viewBox="0 0 256 256">
+                        <path fill="currentColor" d="M209.7 44L100.1 163.2l-3.1 3.6-3.1-3.4-46.4-48.5-22.3 20.4 72.4 77 135-148.7z"></path>
+                    </svg>
+                    נגב
+                </li>
+                        </ul>
+
+                        <div hidden id="tagForm-3979">
+    <div class="c-tag-form u-bgc--formbg u-mt--2 u-pos--r">
+        <div class="u-p--2">
+            <button type="button" class="c-tag-form__close-button u-pos--a u-t--1 u-l--1 u-w--3 u-h--3" on="tap:tagForm-3979.hide">
+                <svg class="u-w--11px u-h--11px" viewBox="0 0 256 256" aria-label="close">
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </button>
+
+            <form action="https://services.haaretz.co.il/user-alerts/register" action-xhr="https://services.haaretz.co.il/user-alerts/register" method="get" target="_top" custom-validation-reporting="show-first-on-submit" on="submit-success:bell-3979.hide,success-3979.show">
+                <div class="c-tag-form__hide-on-submit">
+                    <p class="c-tag-form__text u-fw--700 u-pl--7 u-type--milli">שלחו לי התראה כשיש כתבה חדשה על <a class="react-style-link" href="https://www.themarker.com/misc/tags/TAG-1.3979">נגב</a></p>
+                    <div class="u-h--20px">
+                        <label for="email-3979" class="c-tag-form__email u-type--micro u-ph--2px u-d--ib u-bgc--white u-mr--1 u-fw--700">דוא"ל <sup class="u-c--alert">*</sup><label>
+                    </div>
+                    <input aria-describedby="text-3979" name="email" class="c-tag-form__input u-w--100%" id="email-3979" type="email" required/>
+                    <div visible-when-invalid="valueMissing" validation-for="email-3979" class="u-c--form-text u-type--micro u-c--alert">יש להכניס כתובת דואר אלקטרוני</div>
+                    <div visible-when-invalid="typeMismatch" validation-for="email-3979" class="u-c--form-text u-type--micro u-c--alert">כתובת דואר אלקטרוני אינה תקינה</div>
+                    <input type="hidden" name="resourceType" value="articleTag"/>
+                    <input type="hidden" name="site" value="htz"/>
+                    <input type="hidden" name="resourceId" value="1.3979"/>
+                    <input type="hidden" name="platform" value="amp"/>
+                    <input type="hidden" name="feature" value="Tag Alert - article page"/>
+                    <template amp-access-template type="amp-mustache">
+                        <input type="hidden" name="readerId" value="{{rid}}"/>
+                    </template>
+                    <div class="u-c--form-text u-type--micro" id="text-3979">אנא הזינו כתובת אימייל</div>
+                    <button class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5" type="submit">שלחו</button>
+                </div>
+                <div submit-error class="c-tag-form__error u-mt--5 u-ta--c">
+                    <p class="c-tag-form__text u-fw--700 u-type--milli">ההרשמה נכשלה, אנא נסה שנית מאוחר יותר.</p>
+                    <button on="tap:tagForm-3979.hide" class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5">סגור</button>
+                </div>
+                <div submit-success class="c-tag-form__success u-mt--5 u-ta--c">
+                    <p class="c-tag-form__text u-fw--700 u-type--milli">נרשמת בהצלחה!</p>
+                    <button on="tap:tagForm-3979.hide" class="c-tag-form__button o-btn o-btn--center u-type--milli u-fw--700 u-mt--2 u-m--auto u-d--b u-h--5">סגור</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>            </div>
+    </section>
                         </div>
         <script id="goToApp" type="text/plain" target="amp-script">
         const userAgent = navigator.userAgent.toLowerCase();
@@ -982,42 +1090,42 @@
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10477179/3500395615.jpg?precrop=1697,986,x225,y71&width=320&height=180' width='320' alt='עמיר פרץ. בשבועיים שעברו מאז נכנס לתפקידו פרץ מחפש סיבות להדיח את לוי - צילום: אליהו הרשקוביץ' srcset='https://img.haarets.co.il/img/1.10477179/3500395615.jpg?precrop=1697,986,x225,y71&width=320&height=180 320w,https://img.haarets.co.il/img/1.10477179/3500395615.jpg?precrop=1697,986,x225,y71&width=480&height=270 480w,https://img.haarets.co.il/img/1.10477179/3500395615.jpg?precrop=1697,986,x225,y71&width=640&height=360 640w,https://img.haarets.co.il/img/1.10477179/3500395615.jpg?precrop=1697,986,x225,y71&width=800&height=450 800w' title='עמיר פרץ. בשבועיים שעברו מאז נכנס לתפקידו פרץ מחפש סיבות להדיח את לוי - צילום: אליהו הרשקוביץ' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/opinions/.premium.HIGHLIGHT-1.10477036">השיקול העיקרי מאחורי המינוי של עמיר פרץ: השר מחפש בייס</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10481417/4023532231.jpg?precrop=1142,665,x43,y4&width=320&height=180' width='320' alt='נשיא ארה&#34;ב לשעבר דונלד טראמפ. טוען כי החקירה מפירה את זכויותיו החוקתיות - צילום: REUTERS/Kevin Lamarque' srcset='https://img.haarets.co.il/img/1.10481417/4023532231.jpg?precrop=1142,665,x43,y4&width=320&height=180 320w,https://img.haarets.co.il/img/1.10481417/4023532231.jpg?precrop=1142,665,x43,y4&width=480&height=270 480w,https://img.haarets.co.il/img/1.10481417/4023532231.jpg?precrop=1142,665,x43,y4&width=640&height=360 640w,https://img.haarets.co.il/img/1.10481417/4023532231.jpg?precrop=1142,665,x43,y4&width=800&height=450 800w' title='נשיא ארה&#34;ב לשעבר דונלד טראמפ. טוען כי החקירה מפירה את זכויותיו החוקתיות - צילום: REUTERS/Kevin Lamarque' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/tmr/.premium-1.10481398">טראמפ תובע את התובעת הכללית: "מונעת מעוינות ותשוקה להטריד"</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/opinions/.premium.HIGHLIGHT-1.10477036"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/tmr/.premium-1.10481398"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.6660107/1689276115.jpg?precrop=2184,1269,x16,y56&width=320&height=180' width='320' alt='צילום: Getty Images /  iStockphoto' srcset='https://img.haarets.co.il/img/1.6660107/1689276115.jpg?precrop=2184,1269,x16,y56&width=320&height=180 320w,https://img.haarets.co.il/img/1.6660107/1689276115.jpg?precrop=2184,1269,x16,y56&width=480&height=270 480w,https://img.haarets.co.il/img/1.6660107/1689276115.jpg?precrop=2184,1269,x16,y56&width=640&height=360 640w,https://img.haarets.co.il/img/1.6660107/1689276115.jpg?precrop=2184,1269,x16,y56&width=800&height=450 800w' title='צילום: Getty Images /  iStockphoto' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/food/10-recipes/MAGAZINE-1.10477970">זה הזמן להיערך לסערה: 24 גוונים של מרק כתום</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10481349/689469298.jpg?precrop=1753,1018,x0,y194&width=320&height=180' width='320' alt='זאב אנגלמאייר (שושקה). הקלות שבה רואים יוצרים ואמנים כמי שלא ראויים לשכר היא בלתי נתפסת - צילום: אביתר עמר' srcset='https://img.haarets.co.il/img/1.10481349/689469298.jpg?precrop=1753,1018,x0,y194&width=320&height=180 320w,https://img.haarets.co.il/img/1.10481349/689469298.jpg?precrop=1753,1018,x0,y194&width=480&height=270 480w,https://img.haarets.co.il/img/1.10481349/689469298.jpg?precrop=1753,1018,x0,y194&width=640&height=360 640w,https://img.haarets.co.il/img/1.10481349/689469298.jpg?precrop=1753,1018,x0,y194&width=800&height=450 800w' title='זאב אנגלמאייר (שושקה). הקלות שבה רואים יוצרים ואמנים כמי שלא ראויים לשכר היא בלתי נתפסת - צילום: אביתר עמר' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/gallery/opinion/.premium-1.10481352">בשביל הוקרה וכבוד צריך לעבוד, אבל בחינם</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/food/10-recipes/MAGAZINE-1.10477970"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/gallery/opinion/.premium-1.10481352"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10461236/2812830619.jpg?precrop=1838,1066,x0,y0&width=320&height=180' width='320' alt='' srcset='https://img.haarets.co.il/img/1.10461236/2812830619.jpg?precrop=1838,1066,x0,y0&width=320&height=180 320w,https://img.haarets.co.il/img/1.10461236/2812830619.jpg?precrop=1838,1066,x0,y0&width=480&height=270 480w,https://img.haarets.co.il/img/1.10461236/2812830619.jpg?precrop=1838,1066,x0,y0&width=640&height=360 640w,https://img.haarets.co.il/img/1.10461236/2812830619.jpg?precrop=1838,1066,x0,y0&width=800&height=450 800w' title='' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/tmr/.premium-MAGAZINE-1.10453177">"אם אני נוסעת 17 ק"מ ב-45 דקות אני אומרת תודה. זה לא שפוי"</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10481423/2136102289.jpg?precrop=2156,1253,x44,y0&width=320&height=180' width='320' alt='&#34;הסערה&#34; היום בתל אביב - צילום: תומר אפלבאום' srcset='https://img.haarets.co.il/img/1.10481423/2136102289.jpg?precrop=2156,1253,x44,y0&width=320&height=180 320w,https://img.haarets.co.il/img/1.10481423/2136102289.jpg?precrop=2156,1253,x44,y0&width=480&height=270 480w,https://img.haarets.co.il/img/1.10481423/2136102289.jpg?precrop=2156,1253,x44,y0&width=640&height=360 640w,https://img.haarets.co.il/img/1.10481423/2136102289.jpg?precrop=2156,1253,x44,y0&width=800&height=450 800w' title='&#34;הסערה&#34; היום בתל אביב - צילום: תומר אפלבאום' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/digital/daily/1.10481292">היום שבו הישראלים פחדו מאויב שלא הכירו עד שלשום</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/tmr/.premium-MAGAZINE-1.10453177"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/digital/daily/1.10481292"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10478183/858366265.jpg?precrop=1922,1117,x131,y67&width=320&height=180' width='320' alt='צילום: NIKOLAY DOYCHINOV - AFP' srcset='https://img.haarets.co.il/img/1.10478183/858366265.jpg?precrop=1922,1117,x131,y67&width=320&height=180 320w,https://img.haarets.co.il/img/1.10478183/858366265.jpg?precrop=1922,1117,x131,y67&width=480&height=270 480w,https://img.haarets.co.il/img/1.10478183/858366265.jpg?precrop=1922,1117,x131,y67&width=640&height=360 640w,https://img.haarets.co.il/img/1.10478183/858366265.jpg?precrop=1922,1117,x131,y67&width=800&height=450 800w' title='צילום: NIKOLAY DOYCHINOV - AFP' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/news/world/europe/.premium-1.10477145">בישוף איטלקי בישר לילדים את האמת המרה: אין סנטה</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10450202/1243582412.png?precrop=1079,628,x362,y271&width=320&height=180' width='320' alt='מתוך הקמפיין של טורנדו. בתגובת סלע נכתב היא החליטה שהיא לא מעוניינת בהתקשרות עתידית עם טורנדו - צילום: צילום מסך מתוך ערוץ היוטיוב של טורנדו' srcset='https://img.haarets.co.il/img/1.10450202/1243582412.png?precrop=1079,628,x362,y271&width=320&height=180 320w,https://img.haarets.co.il/img/1.10450202/1243582412.png?precrop=1079,628,x362,y271&width=480&height=270 480w,https://img.haarets.co.il/img/1.10450202/1243582412.png?precrop=1079,628,x362,y271&width=640&height=360 640w,https://img.haarets.co.il/img/1.10450202/1243582412.png?precrop=1079,628,x362,y271&width=800&height=450 800w' title='מתוך הקמפיין של טורנדו. בתגובת סלע נכתב היא החליטה שהיא לא מעוניינת בהתקשרות עתידית עם טורנדו - צילום: צילום מסך מתוך ערוץ היוטיוב של טורנדו' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/tmr/.premium-1.10481051">רותם סלע עונה לתביעה: טורנדו הציגו אותי כאדם אטום ותאב בצע</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/news/world/europe/.premium-1.10477145"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/tmr/.premium-1.10481051"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10477267/2354594663.jpg?precrop=1627,945,x0,y541&width=320&height=180' width='320' alt='חוקר בתוך המנהרה התת-קרקעית. הטכנולוגיה ששימשה לבניית המנהרה הוזכרה בכתביו של הארכיטקט הרומי ויטרוביוס, בכתב יד בן יותר מאלפיים שנה - צילום: יואב נגב' srcset='https://img.haarets.co.il/img/1.10477267/2354594663.jpg?precrop=1627,945,x0,y541&width=320&height=180 320w,https://img.haarets.co.il/img/1.10477267/2354594663.jpg?precrop=1627,945,x0,y541&width=480&height=270 480w,https://img.haarets.co.il/img/1.10477267/2354594663.jpg?precrop=1627,945,x0,y541&width=640&height=360 640w,https://img.haarets.co.il/img/1.10477267/2354594663.jpg?precrop=1627,945,x0,y541&width=800&height=450 800w' title='חוקר בתוך המנהרה התת-קרקעית. הטכנולוגיה ששימשה לבניית המנהרה הוזכרה בכתביו של הארכיטקט הרומי ויטרוביוס, בכתב יד בן יותר מאלפיים שנה - צילום: יואב נגב' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/science/archeology/.premium-1.10477059">מחקר: פונטיוס פילאטוס ולא הורדוס הוא שבנה את אמת הביאר בירושלים</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10480322/2503298653.JPG?precrop=1127,655,x55,y4&width=320&height=180' width='320' alt='אילוסטרציה' srcset='https://img.haarets.co.il/img/1.10480322/2503298653.JPG?precrop=1127,655,x55,y4&width=320&height=180 320w,https://img.haarets.co.il/img/1.10480322/2503298653.JPG?precrop=1127,655,x55,y4&width=480&height=270 480w,https://img.haarets.co.il/img/1.10480322/2503298653.JPG?precrop=1127,655,x55,y4&width=640&height=360 640w,https://img.haarets.co.il/img/1.10480322/2503298653.JPG?precrop=1127,655,x55,y4&width=800&height=450 800w' title='&#34;הדרך היחידה להתגבר על הפחד מדחייה הוא לחוות אותה ולא להימנע ממנה&#34;' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/blogs/hakirot/BLOG-1.10480184">אני בשנות ה-20 ומתקשה למצוא קשר זוגי. אני הורסת לעצמי דייטים</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/science/archeology/.premium-1.10477059"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/blogs/hakirot/BLOG-1.10480184"></a>
 </article>          </div>    
         </div>
     </aside>
