@@ -74,7 +74,7 @@
 <meta name="twitter:description" content="קוק וצוקרברג החזירו את ההייפ לשוק טכנולוגיות ה-AR/VR – וההשקעות בסטארטאפים זינקו ■ נראה כי קריסת התחום לפני שנים ספורות היא כעת רק זיכרון רחוק"/>
 <meta name="twitter:image" content="https://www.haaretz.co.il/polopoly_fs/1.10562172.1643084715!/image/3424384418.jpg_gen/derivatives/headline_1200x630/3424384418.jpg"/>
 
-<meta property="og:pubdate" content="2022-01-25T06:08:28+0200">
+<meta property="og:pubdate" content="2022-01-25T06:08:39+0200">
 <meta property="og:url" content="https://www.themarker.com/technation/.premium-1.10561213" >
 <meta property="og:title" content="זיכרון קצר? חברות מציאות מדומה ורבודה גייסו שיא של 1.9 מיליארד ד' ברבעון אחד" >
 <meta property="og:description"content="קוק וצוקרברג החזירו את ההייפ לשוק טכנולוגיות ה-AR/VR – וההשקעות בסטארטאפים זינקו ■ נראה כי קריסת התחום לפני שנים ספורות היא כעת רק זיכרון רחוק" >
@@ -107,62 +107,89 @@
 /*# sourceMappingURL=screen.css.map */
 
     
-                            .infographic-list {
-    padding: 19px;
-    color: #1a6b96;
-    background-color: #ebf2f5;
+                            .infographic-columns {
+    color: #222222;
 }
 
-.infographic-list > .title {
+.infographic-columns .title {
     font-size: 21px;
     font-weight: bold;
-    margin-bottom: 10px;
-    border-bottom: solid 2px #1a6b96;
+    border-bottom: solid 1px #222;
+    margin-bottom: 30px;
 }
 
-.infographic-list .credit {
-    font-size: 12px;
-    color: #2d2d2d;
+.infographic-columns .row {
+
 }
 
-.infographic-list .list {
-    font-size: 18px;
-    margin-left: 19px;
-}
-
-.infographic-list .list p {
-    padding-right: 7px;
-}
-
-
-.infographic-list .list p:before {
-    content: '';
-    width: 7px;
-    height: 7px;
+.infographic-columns .row .label {
+    font-size: 14px;
     display: inline-block;
-    border-radius: 50%;
-    transform: translateY(-2px) translateX(7px);
-    background-color: #1a6b96;
+    text-align: left;
+    overflow: hidden;
+    height: 34px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.infographic-list .list a {
-    text-decoration: underline;
+.infographic-columns .row .bar-wrapper {
+    display: inline-block;
 }
 
-
-.dark-mode .infographic-list {
-    background-color: #2d2d2d;
-    color: #86d8f3;
+.infographic-columns .row .bar {
+    height: 20px;
+    display: inline-block;
+    background-color: #207eb5;
 }
 
-.dark-mode .infographic-list > .title {
-    border-bottom: solid 2px #86d8f3;
+.infographic-columns .row .bar.red,
+.infographic-columns .row .bar.highlight {
+    background-color: #a9001c;
 }
 
-.dark-mode .infographic-list .list p:before {
+.infographic-columns .row .value {
+    display: inline-block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.infographic-columns .row .label,
+.infographic-columns .row .value {
+    margin-top: -4px;
+    vertical-align: top;
+}
+
+.infographic-columns .source {
+    font-size: 12px;
+    margin-top: 17px;
+}
+
+.dark-mode .infographic-columns {
+    color: white;
+}
+
+.dark-mode .infographic-columns .title {
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+.dark-mode .infographic-columns .row .bar {
     background-color: #86d8f3;
 }
-            
+
+.dark-mode .infographic-columns .row .bar.red,
+.dark-mode .infographic-columns .row .bar.highlight {
+    background-color: #fff;
+}
+
+.dark-mode .infographic-columns .row .value {
+    color: white;
+}
+
+.infographic-columns .row .bar {
+    /*background-color: #86d8f3;*/
+}            
     .amp-article-paywall{
         width: 100%;
         background-image: linear-gradient(to bottom, #00a9d5, #4abee4);
@@ -622,9 +649,9 @@
                     
                     
                                                                 <div class="c-article-byline__pubdate u-c--text-pale">
-                            <meta property="article:published" itemprop="datePublished" content="2022-01-25T06:08:28+0200" />
-                            <meta property="article:modified" itemprop="dateModified" content="2022-01-25T06:08:00+0200" />
-                            <time datetime="2022-01-25T06:08:28+0200">06:08</time></div>
+                            <meta property="article:published" itemprop="datePublished" content="2022-01-25T06:08:39+0200" />
+                            <meta property="article:modified" itemprop="dateModified" content="2022-01-25T10:38:00+0200" />
+                            <time datetime="2022-01-25T06:08:39+0200">06:08</time>| עודכן ב: <time datetime="2022-01-25T10:38:00+0200">10:38</time></div>
                                                             </div>
             </div>
         </div>
@@ -770,7 +797,7 @@
                     "extraUrlParams": {
                         "properties.publisher": "haaretz",
                         "properties.category": "themarker/technation/",
-                        "properties.article.publishingdate": "2022-01-25T06:08:28.507Z",
+                        "properties.article.publishingdate": "2022-01-25T06:08:39.095Z",
                         "properties.article.author": "שגיא כהן"
                     }
                 }
@@ -832,7 +859,15 @@
     </template>
 </aside>                            
                                     
-                                                                                
+                                                                        
+
+                            <div>
+            <div  class="c-dfp-ad u-ml--auto u-mr--auto u-w--300px">
+                <amp-ad width="300" height="250" layout="fixed" type="doubleclick" data-multi-size="300x250,1x1,330x330,336x280,108x108,fluid" data-multi-size-validation="false" data-slot="/9401/Haaretz.co.il/Haaretz.co.il.InRead.1.Mobile_amp/Haaretz.co.il.InRead.1.Mobile_amp_homepage" json='{"targeting":{"stg":"3","articleId":"1.10561213","section":"technation"}}' rtc-config='{"urls": ["https://idx.amp.permutive.com/rtc?type=doubleclick"]}'>
+                </amp-ad>
+            </div>
+        </div>
+                                                        
                             
                                                         
                       <p>בשנה האחרונה מארק צוקרברג <a href="https://www.themarker.com/technation/.premium-1.10336237">שינה את שמה של פייסבוק למטא</a>, הציג את חזון המטאוורס והכריז שתשקיע מיליארדי דולרים בתחום המציאות המדומה והרבודה. אפל של טים קוק, לפי כל ההערכות, נמצאת בשלב מתקדם של <a href="https://www.themarker.com/technation/.premium.HIGHLIGHT-1.9638829">פיתוח משקפי מציאות רבודה</a> משלה. גוגל, כך נחשף בשבוע שעבר, עובדת גם היא על משקפי מציאות רבודה חדשים. חברות נוספות כמו מיקרוסופט ואנבידיה החלו לדבר על המטאוורס כפלטפורמת האינטרנט העתידית. בהתאם לכך, המשקיעים לא רוצים להחמיץ את הטרנד העתידי - ושופכים כסף לחברות.&nbsp;</p>
@@ -841,16 +876,63 @@
                                 
                                 
                                             
-                                    <div class="infographic-list">
-                    <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=320&height=240' width='320' alt='מציאות רבודה' srcset='https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=320&height=240 320w,https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=480&height=360 480w,https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=640&height=480 640w,https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=800&height=600 800w' height='240' ></amp-img>        <div class="credit">                                    צילום: Martin Meissner/אי־פי
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        
+            
+<div class="infographic-columns">
+    <div class="title">השקעות הון סיכון בתחום ה-AR/VR, במיליארדי דולרים</div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2017</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:50%"></div>
+                <div class="value">2.8</div>
+            </div>
+        </div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2018</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:80%"></div>
+                <div class="value">4.4</div>
+            </div>
+        </div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2019</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:34%"></div>
+                <div class="value">1.9</div>
+            </div>
+        </div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2020</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:30%"></div>
+                <div class="value">1.7</div>
+            </div>
+        </div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2021</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:70%"></div>
+                <div class="value">3.9</div>
+            </div>
+        </div>
+        <div class="source"></div>
 </div>
-        <div class="title">השקעות הון סיכון בתחום ה-AR/VR, במיליארדי דולרים</div>
-            <ul class="list"><li>2017 - 2.8</li> 
-<li>2018 - 4.4</li> 
-<li>2019 - 1.9</li> 
-<li>2020 - 1.7</li> 
-<li>2021 - 3.9</li></ul>
-    </div>
 
                                                                                 
                             
@@ -883,15 +965,7 @@
                                 
                                             
                                     
-                                                                        
-
-                            <div>
-            <div  class="c-dfp-ad u-ml--auto u-mr--auto u-w--300px">
-                <amp-ad width="300" height="250" layout="fixed" type="doubleclick" data-multi-size="300x250,1x1,330x330,336x280,108x108,fluid" data-multi-size-validation="false" data-slot="/9401/Haaretz.co.il/Haaretz.co.il.InRead.1.Mobile_amp/Haaretz.co.il.InRead.1.Mobile_amp_homepage" json='{"targeting":{"stg":"3","articleId":"1.10561213","section":"technation"}}' rtc-config='{"urls": ["https://idx.amp.permutive.com/rtc?type=doubleclick"]}'>
-                </amp-ad>
-            </div>
-        </div>
-                                                        
+                                                                                
                             
                                                         
                       <p>חברה נוספת שקרסה היא ODG, האמריקאית הוותיקה, שפיתחה משקפי AR לשוק הצבאי, הארגוני והצרכני. בנוסף, Blippar הבריטית, מחלוצות התחום, שפיתחה יישומי AR, נסגרה לאחר שגייסה כבר 130 מיליון דולר; ואינטל שמה קץ למיזם משקפיים חכמים בשם Vaunt. בחודשים שלאחר מכן גם מג'יק ליפ נקלעה למשבר, צימצמה פעילות וביצעה שינוי כיוון עסקי; וחברת נורת' שפיתחה משקפיים חכמים, נמכרה לגוגל ב-180 מיליון דולר – פחות מהסכום שאותו גייסה.</p>
@@ -911,7 +985,15 @@
                                 
                                             
                                     
-                                                                                
+                                                                        
+
+                            <div>
+            <div  class="c-dfp-ad u-ml--auto u-mr--auto u-w--300px">
+                <amp-ad width="300" height="250" layout="fixed" type="doubleclick" data-multi-size="300x250,300x600,330x330,336x280,1x1,108x108,fluid" data-multi-size-validation="false" data-slot="/9401/Haaretz.co.il/Haaretz.co.il.InRead.2.Mobile_amp/Haaretz.co.il.InRead.2.Mobile_amp_homepage" json='{"targeting":{"stg":"3","articleId":"1.10561213","section":"technation"}}' rtc-config='{"urls": ["https://idx.amp.permutive.com/rtc?type=doubleclick"]}'>
+                </amp-ad>
+            </div>
+        </div>
+                                                        
                             
                                                         
                       <p>אבל ממש לא בטוח שהבעיות שהיו קיימות בתחום עד לפני כמה שנים וגרמו לקריסה הזאת נפתרו באופן שיצדיק את ההייפ החדש. חזון המטאוורס עדיין רחוק, ולמרות השיפורים וההתקדמות (בעיקר בתחום הגיימינג במציאות מדומה), לא היו פריצות דרך משמעותיות בתחום החומרה, השבבים והאופטיקה. בנוסף, לא היו פיצוחים דרמטיים בתחום ממשקי המשתמש – ועדיין לא ברור אם אכן פוענח ה"קילר אפליקיישן", התכונה שתגרום למשתמשים לנהור בהמוניהם ולשים משקפי מציאות מדומה או רבודה על העיניים שלהם.</p>
@@ -1084,7 +1166,15 @@
     </template>
 </aside>                            
                                     
-                                                                                
+                                                                        
+
+                            <div>
+            <div  class="c-dfp-ad u-ml--auto u-mr--auto u-w--300px">
+                <amp-ad width="300" height="250" layout="fixed" type="doubleclick" data-multi-size="300x250,1x1,330x330,336x280,108x108,fluid" data-multi-size-validation="false" data-slot="/9401/Haaretz.co.il/Haaretz.co.il.InRead.1.Mobile_amp/Haaretz.co.il.InRead.1.Mobile_amp_homepage" json='{"targeting":{"stg":"3","articleId":"1.10561213","section":"technation"}}' rtc-config='{"urls": ["https://idx.amp.permutive.com/rtc?type=doubleclick"]}'>
+                </amp-ad>
+            </div>
+        </div>
+                                                        
                             
                                                         
                       <p>בשנה האחרונה מארק צוקרברג <a href="https://www.themarker.com/technation/.premium-1.10336237">שינה את שמה של פייסבוק למטא</a>, הציג את חזון המטאוורס והכריז שתשקיע מיליארדי דולרים בתחום המציאות המדומה והרבודה. אפל של טים קוק, לפי כל ההערכות, נמצאת בשלב מתקדם של <a href="https://www.themarker.com/technation/.premium.HIGHLIGHT-1.9638829">פיתוח משקפי מציאות רבודה</a> משלה. גוגל, כך נחשף בשבוע שעבר, עובדת גם היא על משקפי מציאות רבודה חדשים. חברות נוספות כמו מיקרוסופט ואנבידיה החלו לדבר על המטאוורס כפלטפורמת האינטרנט העתידית. בהתאם לכך, המשקיעים לא רוצים להחמיץ את הטרנד העתידי - ושופכים כסף לחברות.&nbsp;</p>
@@ -1093,16 +1183,63 @@
                                 
                                 
                                             
-                                    <div class="infographic-list">
-                    <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=320&height=240' width='320' alt='מציאות רבודה' srcset='https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=320&height=240 320w,https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=480&height=360 480w,https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=640&height=480 640w,https://img.haarets.co.il/img/1.10562009/39916337.jpg?precrop=1902,1429,x178,y0&width=800&height=600 800w' height='240' ></amp-img>        <div class="credit">                                    צילום: Martin Meissner/אי־פי
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        
+            
+<div class="infographic-columns">
+    <div class="title">השקעות הון סיכון בתחום ה-AR/VR, במיליארדי דולרים</div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2017</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:50%"></div>
+                <div class="value">2.8</div>
+            </div>
+        </div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2018</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:80%"></div>
+                <div class="value">4.4</div>
+            </div>
+        </div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2019</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:34%"></div>
+                <div class="value">1.9</div>
+            </div>
+        </div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2020</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:30%"></div>
+                <div class="value">1.7</div>
+            </div>
+        </div>
+            
+
+                
+        <div class="row">
+            <div class="label" style="width:10%">2021</div>
+            <div class="bar-wrapper" style="width:85%">
+                <div class="bar default" style="width:70%"></div>
+                <div class="value">3.9</div>
+            </div>
+        </div>
+        <div class="source"></div>
 </div>
-        <div class="title">השקעות הון סיכון בתחום ה-AR/VR, במיליארדי דולרים</div>
-            <ul class="list"><li>2017 - 2.8</li> 
-<li>2018 - 4.4</li> 
-<li>2019 - 1.9</li> 
-<li>2020 - 1.7</li> 
-<li>2021 - 3.9</li></ul>
-    </div>
 
                                                                                 
                             
@@ -1135,15 +1272,7 @@
                                 
                                             
                                     
-                                                                        
-
-                            <div>
-            <div  class="c-dfp-ad u-ml--auto u-mr--auto u-w--300px">
-                <amp-ad width="300" height="250" layout="fixed" type="doubleclick" data-multi-size="300x250,1x1,330x330,336x280,108x108,fluid" data-multi-size-validation="false" data-slot="/9401/Haaretz.co.il/Haaretz.co.il.InRead.1.Mobile_amp/Haaretz.co.il.InRead.1.Mobile_amp_homepage" json='{"targeting":{"stg":"3","articleId":"1.10561213","section":"technation"}}' rtc-config='{"urls": ["https://idx.amp.permutive.com/rtc?type=doubleclick"]}'>
-                </amp-ad>
-            </div>
-        </div>
-                                                        
+                                                                                
                             
                                                         
                       <p>חברה נוספת שקרסה היא ODG, האמריקאית הוותיקה, שפיתחה משקפי AR לשוק הצבאי, הארגוני והצרכני. בנוסף, Blippar הבריטית, מחלוצות התחום, שפיתחה יישומי AR, נסגרה לאחר שגייסה כבר 130 מיליון דולר; ואינטל שמה קץ למיזם משקפיים חכמים בשם Vaunt. בחודשים שלאחר מכן גם מג'יק ליפ נקלעה למשבר, צימצמה פעילות וביצעה שינוי כיוון עסקי; וחברת נורת' שפיתחה משקפיים חכמים, נמכרה לגוגל ב-180 מיליון דולר – פחות מהסכום שאותו גייסה.</p>
@@ -1163,7 +1292,15 @@
                                 
                                             
                                     
-                                                                                
+                                                                        
+
+                            <div>
+            <div  class="c-dfp-ad u-ml--auto u-mr--auto u-w--300px">
+                <amp-ad width="300" height="250" layout="fixed" type="doubleclick" data-multi-size="300x250,300x600,330x330,336x280,1x1,108x108,fluid" data-multi-size-validation="false" data-slot="/9401/Haaretz.co.il/Haaretz.co.il.InRead.2.Mobile_amp/Haaretz.co.il.InRead.2.Mobile_amp_homepage" json='{"targeting":{"stg":"3","articleId":"1.10561213","section":"technation"}}' rtc-config='{"urls": ["https://idx.amp.permutive.com/rtc?type=doubleclick"]}'>
+                </amp-ad>
+            </div>
+        </div>
+                                                        
                             
                                                         
                       <p>אבל ממש לא בטוח שהבעיות שהיו קיימות בתחום עד לפני כמה שנים וגרמו לקריסה הזאת נפתרו באופן שיצדיק את ההייפ החדש. חזון המטאוורס עדיין רחוק, ולמרות השיפורים וההתקדמות (בעיקר בתחום הגיימינג במציאות מדומה), לא היו פריצות דרך משמעותיות בתחום החומרה, השבבים והאופטיקה. בנוסף, לא היו פיצוחים דרמטיים בתחום ממשקי המשתמש – ועדיין לא ברור אם אכן פוענח ה"קילר אפליקיישן", התכונה שתגרום למשתמשים לנהור בהמוניהם ולשים משקפי מציאות מדומה או רבודה על העיניים שלהם.</p>
@@ -1381,42 +1518,42 @@
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-video loop muted width='320' height='180' layout='responsive' autoplay src="https://gif.haarets.co.il/image/fetch/w_668,h_389,x_0,y_24,c_crop,g_north_west/w_360,q_auto,c_fill,f_mp4/fl_lossy.any_format.preserve_transparency.progressive:none/https://www.haaretz.co.il/polopoly_fs/1.10561338!/image/1055226351.gif" ></amp-video>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/opinions/editorial-articles/.premium-1.10562381">ג'מאל חכרוש אינו ראוי ללבוש מדי שוטר</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10564044/3890086376.jpg?precrop=1690,978,x0,y32&width=320&height=180' width='320' alt='דוד שושן - צילום: מרינה לבדב' srcset='https://img.haarets.co.il/img/1.10564044/3890086376.jpg?precrop=1690,978,x0,y32&width=320&height=180 320w,https://img.haarets.co.il/img/1.10564044/3890086376.jpg?precrop=1690,978,x0,y32&width=480&height=270 480w,https://img.haarets.co.il/img/1.10564044/3890086376.jpg?precrop=1690,978,x0,y32&width=640&height=360 640w,https://img.haarets.co.il/img/1.10564044/3890086376.jpg?precrop=1690,978,x0,y32&width=800&height=450 800w' title='דוד שושן - צילום: מרינה לבדב' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/food/MAGAZINE-1.10563249">דוד שושן לא קיבל אתמול מסעדה, אבל לנו יש את המתכונים שלו</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/opinions/editorial-articles/.premium-1.10562381"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/food/MAGAZINE-1.10563249"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10562588/27142361.jpg?precrop=1506,877,x349,y135&width=320&height=180' width='320' alt='רותרפורד לאחר הנחיתה בקורטרייק, ביום חמישי - צילום: JOHN THYS - AFP' srcset='https://img.haarets.co.il/img/1.10562588/27142361.jpg?precrop=1506,877,x349,y135&width=320&height=180 320w,https://img.haarets.co.il/img/1.10562588/27142361.jpg?precrop=1506,877,x349,y135&width=480&height=270 480w,https://img.haarets.co.il/img/1.10562588/27142361.jpg?precrop=1506,877,x349,y135&width=640&height=360 640w,https://img.haarets.co.il/img/1.10562588/27142361.jpg?precrop=1506,877,x349,y135&width=800&height=450 800w' title='רותרפורד לאחר הנחיתה בקורטרייק, ביום חמישי - צילום: JOHN THYS - AFP' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/news/world/europe/.premium-MAGAZINE-1.10562337">בת 19 הקיפה את כדור הארץ לבדה וסימסה להורים: "אני בחיים"</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10564247/2129545778.JPG?precrop=1126,656,x36,y5&width=320&height=180' width='320' alt='יגאל שילון ומייקל, מתוך הסרט' srcset='https://img.haarets.co.il/img/1.10564247/2129545778.JPG?precrop=1126,656,x36,y5&width=320&height=180 320w,https://img.haarets.co.il/img/1.10564247/2129545778.JPG?precrop=1126,656,x36,y5&width=480&height=270 480w,https://img.haarets.co.il/img/1.10564247/2129545778.JPG?precrop=1126,656,x36,y5&width=640&height=360 640w,https://img.haarets.co.il/img/1.10564247/2129545778.JPG?precrop=1126,656,x36,y5&width=800&height=450 800w' title='יגאל שילון ומייקל, מתוך הסרט' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/blogs/einatkedem/BLOG-1.10564047">מי שבוחר לראות בסרט על יגאל שילון מניפולציה צינית - מפספס</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/news/world/europe/.premium-MAGAZINE-1.10562337"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/blogs/einatkedem/BLOG-1.10564047"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10562852/1742979085.jpg?precrop=2164,1257,x24,y36&width=320&height=180' width='320' alt='צילום: אוהד צויגנברג' srcset='https://img.haarets.co.il/img/1.10562852/1742979085.jpg?precrop=2164,1257,x24,y36&width=320&height=180 320w,https://img.haarets.co.il/img/1.10562852/1742979085.jpg?precrop=2164,1257,x24,y36&width=480&height=270 480w,https://img.haarets.co.il/img/1.10562852/1742979085.jpg?precrop=2164,1257,x24,y36&width=640&height=360 640w,https://img.haarets.co.il/img/1.10562852/1742979085.jpg?precrop=2164,1257,x24,y36&width=800&height=450 800w' title='צילום: אוהד צויגנברג' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/news/weather/1.10562222">תחזית מזג האוויר: ההפוגה שלפני הסערה</a>
+            <amp-video loop muted width='320' height='180' layout='responsive' autoplay src="https://gif.haarets.co.il/image/fetch/w_260,h_151,x_0,y_25,c_crop,g_north_west/w_360,q_auto,c_fill,f_mp4/fl_lossy.any_format.preserve_transparency.progressive:none/https://www.haaretz.co.il/polopoly_fs/1.10564257!/image/548279429.gif" ></amp-video>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/sport/other/1.10564147">נערת הכדורים נבהלה מג'וק שנכנס למגרש, ציציפאס שלף מחבט. צפו</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/news/weather/1.10562222"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/sport/other/1.10564147"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-video loop muted width='320' height='180' layout='responsive' autoplay src="https://gif.haarets.co.il/image/fetch/w_315,h_183,x_113,y_14,c_crop,g_north_west/w_360,q_auto,c_fill,f_mp4/fl_lossy.any_format.preserve_transparency.progressive:none/https://www.haaretz.co.il/polopoly_fs/1.10563770!/image/1537385104.gif" ></amp-video>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/sport/nba/.premium-1.10563702">עכשיו גם יוטה יודעת מי שחקן הרבע הרביעי הטוב ב-NBA</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10563863/3204362304.png?width=320&height=180' width='320' alt='רותי רוסו ומושיק רוט. ליהוק מבריק  - צילום: רשת 13' srcset='https://img.haarets.co.il/img/1.10563863/3204362304.png?width=320&height=180 320w,https://img.haarets.co.il/img/1.10563863/3204362304.png?width=480&height=270 480w,https://img.haarets.co.il/img/1.10563863/3204362304.png?width=640&height=360 640w,https://img.haarets.co.il/img/1.10563863/3204362304.png?width=800&height=450 800w' title='רותי רוסו ומושיק רוט. ליהוק מבריק  - צילום: רשת 13' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/gallery/television/tv-review/.premium-1.10563749">איך אף אחד לא ליהק אותה עד היום?</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/sport/nba/.premium-1.10563702"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/gallery/television/tv-review/.premium-1.10563749"></a>
 </article>                          
         
 
 		<article class="o-card c-list-honda__item u-pos--r">
-            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.10561071/3392446406.jpeg?precrop=1240,720,x106,y0&width=320&height=180' width='320' alt='כשיש לך תינוקת, אתה מבין שקופסת תותים היא בעצם כלי נשק. הנה ניצחון אחד עליו - צילום: אורי טלשיר' srcset='https://img.haarets.co.il/img/1.10561071/3392446406.jpeg?precrop=1240,720,x106,y0&width=320&height=180 320w,https://img.haarets.co.il/img/1.10561071/3392446406.jpeg?precrop=1240,720,x106,y0&width=480&height=270 480w,https://img.haarets.co.il/img/1.10561071/3392446406.jpeg?precrop=1240,720,x106,y0&width=640&height=360 640w,https://img.haarets.co.il/img/1.10561071/3392446406.jpeg?precrop=1240,720,x106,y0&width=800&height=450 800w' title='כשיש לך תינוקת, אתה מבין שקופסת תותים היא בעצם כלי נשק. הנה ניצחון אחד עליו - צילום: אורי טלשיר' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
-        <a href="/family/.premium-1.10504307">כשיש לך תינוקת קטנה, אתה מבין שקופסת תותים היא בעצם כלי נשק</a>
+            <amp-img layout='responsive' src='https://img.haarets.co.il/img/1.9832920/3032678244.jpg?precrop=2435,1416,x13,y163&width=320&height=180' width='320' alt='מתנחלים מיידים אבנים לעבר פלסטינים סמוך ליצהר  - צילום: AP' srcset='https://img.haarets.co.il/img/1.9832920/3032678244.jpg?precrop=2435,1416,x13,y163&width=320&height=180 320w,https://img.haarets.co.il/img/1.9832920/3032678244.jpg?precrop=2435,1416,x13,y163&width=480&height=270 480w,https://img.haarets.co.il/img/1.9832920/3032678244.jpg?precrop=2435,1416,x13,y163&width=640&height=360 640w,https://img.haarets.co.il/img/1.9832920/3032678244.jpg?precrop=2435,1416,x13,y163&width=800&height=450 800w' title='מתנחלים מיידים אבנים לעבר פלסטינים סמוך ליצהר  - צילום: AP' height='180' ></amp-img>                <h3 class="c-list-honda__heading o-block-link__sub u-p--1 u-pb--3">
+        <a href="/opinions/1.10563897">אז עכשיו כולנו מזועזעים, אבל מחר נשכח</a>
     </h3>
-    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/family/.premium-1.10504307"></a>
+    <a class="o-block-link" aria-hidden="true" tabindex="-1"   target="_top" href="/opinions/1.10563897"></a>
 </article>          </div>    
         </div>
     </aside>
